@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Les Meilleurs Révisions</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords"> 
+        
+        <!-- Mes pages CSS -->
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/html_css_js.css" />
+
+        <!-- Lien pour icone -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!-- Icons -->
+        <link rel="icon" href="../img/logo.webp">
+    </head>
+
+    <body>
+
+        <!-- CREATION DE MON MENU -->
+        <nav>
+            <div class="theme">
+                <div class="changeTheme" id="changeTheme"></div>
+            </div>
+            <!-- Création du titre du menu -->
+            <div class="logo">
+                <a href="../index.html">LES MEILLEURS <strong>REVISIONS</strong></a>
+            </div>
+            <!-- Création du bouton pour le menu au format smartphone -->
+            <label for="btn" class="icon">
+                <span class="fa fa-bars"></span>
+            </label>
+            <input type="checkbox"  id="btn">
+                
+                <!-- Création du menu avec les sous-menus -->
+                <ul>
+                    <li><a href="../index.html"">Accueil</a></li>
+        
+                    <!-- Création de la partie des Matières -->
+                    <li>
+                        <label for="btn-1" class="show">Matières +</label>
+                        <a href="#">Matières</a>
+                        <input type="checkbox"  id="btn-1">
+                        <ul>
+                            <li><a href="algorithmie.html">Algorithmie</a></li>
+                            <li><a href="architecture_reseau.html">Architecture Réseau</a></li>
+                            <li><a href="bases_de_donnees.html">Bases de données</a></li>
+                            <li><a href="html_css_js.html">HTML CSS JS</a></li>
+                            <li><a href="os_administration.html">OS Administration</a></li>
+                            <li><a href="os_funds.html">OS Funds</a></li>
+                            <li><a href="server_funds.html">Server Funds</a></li>
+                        </ul>
+                    </li>
+            
+                    <!-- Création de la partie des Liens -->
+                    <li>
+                        <label for="btn-2" class="show show-active">Liens +</label>
+                        <a href="#" class="active">Liens</a>
+                        <input type="checkbox" id="btn-2">
+                        <ul>
+                            <li><a href="liens_algo.html">Algorithmie</a></li>
+                            <li><a href="#" class="active">HTML - CSS - JS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="a_propos.html">A propos</a></li>
+                    <li><a href="404.html">Contact</a></li>
+                </ul>
+        </nav>
+      
+
+
+        <!-- CREATION DE LA LANDING PAGE (composé d'une présentation)-->
+        <section class="home home-cours" id="home">
+
+            <div class="content">
+                <span data-aos="fade-up" data-aos-delay="150">LIENS</span>
+                <h3 data-aos="fade-up" data-aos-delay="300">HTML - CSS - JS</h3>
+                <p data-aos="fade-up" data-aos-delay="450">Tout ce qui te faut pour devenir le meilleur en HTML - CSS - JS !</p>
+            </div>
+        
+        </section>
+
+
+
+        <!-- CREATION DE LA PARTIE DES DIFFERENTS COURS -->
+        <section class="cours" id="cours">
+            <!-- Mise en page du titre de la partie -->
+            <div class="heading">
+                <span>HTML - CSS - JS</span>
+                <h1>Quelques liens pour t'aider</h1>
+            </div>
+
+            <h4 class="lien-h4">Un validateur HTML&nbsp;:</h4>
+            <p class="lien-p"><a href="https://validator.w3.org/#validate_by_uri" target="_blank">Validator</a> : permet de valider son code HTML</p>
+
+            <h4 class="lien-h4">Quelques éditeurs de code&nbsp;:</h4>
+            <p class="lien-p"><a href="https://www.sublimetext.com/download" target="_blank">Sublime Text</a> : éditeur de code a télécharger</p>
+            <p class="lien-p"><a href="https://code.visualstudio.com/#alt-downloads" target="_blank">Visual Studio Code</a> : éditeur de code a télécharger (utilisé par les professionnels, meilleur selon moi)</p>
+            <p class="lien-p"><a href="https://codepen.io/" target="_blank">CodePen</a> : éditeur de code en ligne</p>
+
+            <h4 class="lien-h4">Polices pour le Web&nbsp;:</h4>
+            <p class="lien-p"><a href="http://romy.tetue.net/list-of-web-safe-fonts" target="_blank">Ici</a> : 21 familles de polices prêtes pour le Web</p>
+            <p class="lien-p"><a href="https://fonts.google.com/" target="_blank">Google Font</a> : polices d'écritures gratuites pour le Web</p>
+            
+            <h4 class="lien-h4">Liens utiles pour en apprendre plus&nbsp;:</h4>
+            <p class="lien-p"><a href="https://www.w3schools.com/" target="_blank">W3Schools</a> : plus grand site de développeurs Web du monde</p>
+            <p class="lien-p"><a href="https://www.pierre-giraud.com/" target="_blank">Pierre Giraud</a> : toutes vos ressources sur le développement Web</p>
+            <p class="lien-p"><a href="http://www.guidecss.fr/" target="_blank">Guide CSS</a> : conseils et bonnes pratiques sur le CSS</p>
+            <p class="lien-p"><a href="https://openclassrooms.com/fr/" target="_blank">OpenClassrooms</a> : site plus généraliste pour apprendre toutes sortes de langages</p>
+            <p class="lien-p"><a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank">Mozilla HTML</a> : technologies Web pour développeurs</p>
+            <p class="lien-p"><a href="https://developer.mozilla.org/fr/docs/Web/CSS" target="_blank">Mozilla CSS</a> : technologies Web pour développeurs</p>
+            <p class="lien-p"><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank">Mozilla JavaScript</a> : technologies Web pour développeurs</p>
+            
+            <h4 class="lien-h4">Les images&nbsp;:</h4>
+            <p class="lien-p"><a href="https://www.remove.bg/fr" target="_blank">Remove</a> : supprime le fond d'une image</p>
+            <p class="lien-p"><a href="https://pixabay.com/fr/" target="_blank">Pixabay</a> : images libres de droits et gratuites à télécharger</p>
+        
+            <h4 class="lien-h4">Pour réaliser les maquettes&nbsp;:</h4>
+            <p class="lien-p"><a href="https://www.figma.com/" target="_blank">Figma</a> : outil possible pour réaliser des maquettes</p>
+            <p class="lien-p"><a href="https://www.axure.com/" target="_blank">Axure</a> : outil possible pour réaliser des maquettes</p>
+            <p class="lien-p"><a href="https://balsamiq.com/" target="_blank">Balsamiq</a> : outil possible pour réaliser des maquettes</p>
+            <p class="lien-p"><a href="https://www.diagrams.net/" target="_blank">Diagrams</a> : outil possible pour réaliser des maquettes</p>
+            
+            <h4 class="lien-h4">Compresser une image&nbsp;:</h4>           
+            <p class="lien-p"><a href="https://imagify.io/fr" target="_blank">Imagify</a> : outil en ligne avec traitement par lots</p>
+            <p class="lien-p"><a href="https://tinypng.com/" target="_blank">Tiny PNG</a> : outil en ligne jusqu'à 20 images en même temps</p>
+            <p class="lien-p"><a href="https://imageoptim.com/fr" target="_blank">Image Optim</a> : outil en local, sur Mac</p>
+            <p class="lien-p"><a href="https://riot-optimizer.com/" target="_blank">Luci CriosWeb</a> : outil en local, sur Windows</p>
+            <p class="lien-p"><a href="https://pnggauntlet.com/" target="_blank">PNG Gauntlet</a> : outil en local, sur Windows</p>
+            
+            <h4 class="lien-h4">Conversion d'une image&nbsp;:</h4>           
+            <p class="lien-p"><a href="https://anyconv.com/fr/convertisseur-de-jpg-en-webp/" target="_blank">AnyConv JPG</a> : conversion de l'image JPG en WEBP</p>
+            <p class="lien-p"><a href="https://anyconv.com/fr/convertisseur-de-png-en-webp/" target="_blank">AnyConv PNG</a> : conversion de l'image PNG en WEBP</p>
+            
+            <h4 class="lien-h4">Jeux pour apprendre&nbsp;:</h4>           
+            <p class="lien-p"><a href="http://flexboxfroggy.com/#fr" target="_blank">Flexbox Froggy</a> : jeu pour apprendre le CSS</p>
+            <p class="lien-p"><a href="https://flukeout.github.io/?ref=blogduwebdesign.com" target="_blank">CSS Diner</a> : jeu pour apprendre le CSS</p>
+            <p class="lien-p"><a href="http://www.flexboxdefense.com/?ref=blogduwebdesign.com" target="_blank">Flexbox Defense</a> : jeu pour apprendre le CSS</p>
+            <p class="lien-p"><a href="https://cssgridgarden.com/#fr" target="_blank">Grid Garden</a> : jeu pour apprendre le CSS (grid)</p>
+            <p class="lien-p"><a href="https://vim-adventures.com/" target="_blank">Vim Adventure</a> : jeu pour apprendre</p>
+        </section>
+
+
+        <!-- CREATION DU FOOTER -->
+        <footer>
+            <ul class="social_icon">
+                <!--<li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>-->
+                <li><a href="https://fr.linkedin.com/in/clément-vitrat-575444223" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <!--<li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>-->
+                <li><a href="https://github.com/clement-vitrat" target="_blank"><i class="fab fa-github"></i></a></li>
+            </ul>
+            <p>Les Meilleurs Révisions by Clément V. © 2022</p>
+        </footer>
+
+        <!-- CREATION DU DARK MODE -->
+        <div class="changeTheme" id="changeTheme"></div>
+
+
+        <!-- CREATION DU RETOUR HAUT DE PAGE-->
+        <div class="retour_haut">
+            <button onclick="topFunction()" id="myBtn"><i class="fas fa-chevron-circle-up"></i></button>
+        </div>
+        
+
+        <script src="../js/script.js"></script>
+
+
+    </body>
+
+</html>

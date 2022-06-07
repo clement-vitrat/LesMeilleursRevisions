@@ -1,0 +1,519 @@
+#home {
+    background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/architecture_reseau.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+}
+/* Mise en page de roulette */
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+    background: green;
+    border-radius: 1rem;
+}
+
+/* MISE EN PAGE DU TITRE DE LA PAGE */
+.home-cours {
+    min-height: 55vh;
+}
+.home-cours .content {
+    max-width: 140rem;
+}
+/* Mise en page pour Smartphone */
+@media (max-width: 768px) {
+    .home-cours .content p {
+        font-size: 1rem;
+    }
+    .home .content h3 {
+        font-size: 10vw;
+    }
+}
+
+
+.service .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap:1.5rem;
+}
+
+.service .box-container .box{
+    border-radius: .5rem;
+    background:#333;
+    text-align: center;
+    padding:2.5rem;
+}
+
+.service .box-container .box i{
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    background:var(--main-color);
+    color:#fff;
+}
+
+.service .box-container .box h3{
+    font-size: 2rem;
+    color:#fff;
+    padding:1rem 0;
+}
+
+.service .box-container .box p{
+    font-size: 1.4rem;
+    color:#eee;
+    line-height: 1.8;
+}
+
+
+/* MISE EN PAGE DES DIFFERENTES PAGES DE LECONS */
+.cours ul li a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--ecriture);
+}
+.cours ul li a:hover {
+    color: red;
+}
+.cours .page {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    overflow-y: auto;
+    z-index: 0;
+    background: var(--background);
+}
+.cours .page:target {
+    left: 0vw;
+    z-index: 1;
+}
+.cours .partie-cours {
+    min-height: 40vh;
+}
+.cours .partie-cours .content {
+    max-width: 150rem;
+}
+.cours .partie-cours .content span {
+    font-size: 3vw;
+}
+.cours .partie-cours .content h3 {
+    font-size: 5vw;
+}
+
+
+/* ANIMATIONS ET CREATION DU BOUTONT RETOUR AU DIFFERENTS COURS */
+.cours .partie-cours .content p a {
+    color: #fff;
+    cursor: pointer;
+    text-align:center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-size: 300% 100%;
+    text-decoration: none;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+.cours .partie-cours .content p a:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.cours .partie-cours .content p a:focus {
+    outline: none;
+}
+
+.cours .box-container .box .content {
+    height: 100%;
+}
+
+/* Mise en page de chaque partie de cours */
+.lecons {
+    padding: 3rem 5%;
+}
+.lecons .cours0-h4 {
+    text-align: center;
+    color: var(--ecriture);
+    font-size: 4rem;
+    font-style: italic;
+    margin-bottom: 3rem;
+    font-family: emoji;
+}
+.lecons .cours0-h5 {
+    text-align: center;
+    color: var(--ecriture);
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.lecons .cours0-h6 {
+    color: var(--ecriture);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-family: emoji;
+}
+.lecons .cours0-p {
+    text-align: justify;
+    color: var(--ecriture);
+    font-size: 1.4vw;
+    padding-bottom: 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.3;
+}
+.lecons .cours0-p span {
+    text-align: justify;
+    color: violet;
+    font-size: 1.4vw;
+    padding-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.3;
+}
+.lecons .cours0-p a {
+    text-align: justify;
+    cursor: pointer;
+    color: green;
+    font-size: 1.4vw;
+    padding-bottom: 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.3;
+}
+.lecons .code-p {
+    color: var(--ecriture);
+    font-size: 1.4vw;
+    padding-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.3;
+}
+
+.lecons img {
+    width: 75%;
+    display: grid;
+    margin: auto;
+}
+.lecons .imageflottante-left {
+    float: left;
+    width: 130px;
+    height: auto;
+    margin-right: 15px;
+}
+.lecons .imageflottante-right {
+    float: right;
+    width: 130px;
+    height: auto;
+    margin-left: 15px;
+}
+.lecons #LeconSpan {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 1.8vw;
+}
+.lecons .espacement {
+    margin: 4vw;
+    border: 0;
+    border-top: 1px solid var(--ecriture);
+}
+@media (max-width:980px) {
+    .lecons img {
+        width: 100%;
+    }
+}
+/* Mise en page pour Smartphone */
+@media (max-width: 768px) {
+    .lecons .cours0-p, .lecons .code-p, .lecons .cours0-p span {
+        font-size: 1.6rem;
+    }
+    .lecons .cours0-h4 {
+        font-size: 3rem;
+    }
+    .lecons #LeconSpan {
+        font-size: 1.8vw;
+    }
+    .lecons .espacement {
+        margin: 10vw;
+    }
+}
+
+
+
+/* MISE EN PAGE DE LA PARTIE 2 */
+.lecons .cours1-table,
+.lecons .cours2-table {
+	border-collapse: collapse;
+	width: 100%;
+}
+.lecons .cours1-tbody td,
+.lecons .cours2-tbody td {
+	text-align: center;
+	padding: 5px 0 30px 10px;
+	border-right: 1px solid var(--separation-table);
+}
+.lecons .cours1-tbody td:last-child,
+.lecons .cours2-tbody td:last-child {
+	border-right: 0;
+}
+.lecons .cours1-tbody p {
+    color: var(--ecriture);
+    text-align: left;
+    font-size: 1.3vw;
+    padding-bottom: 0.6rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.lecons .cours1-tbody #LeconP {
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    color: var(--ecriture);
+}
+.lecons .cours1-tbody #LeconP-tab {
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5vw;
+    padding-left: 2.5vw;
+    padding-right: 1vw;
+    color: var(--ecriture);
+}
+.lecons .cours1-tbody #LeconP-tab-tab {
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5vw;
+    padding-left: 4vw;
+    padding-right: 1vw;
+    color: var(--ecriture);
+}
+.lecons .cours1-tbody #LeconP span {
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5vw;
+    color: violet;
+}
+.lecons .cours1-tbody #LeconP-tab span {
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5vw;
+    color: violet;
+}
+.lecons .cours1-tbody #LeconP-tab-tab span {
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5vw;
+    color: violet;
+}
+
+@media screen and (max-width:800px) {
+    .lecons .cours1-tbody td:before, .lecons .cours2-tbody td:before,
+    .lecons .cours1-table, .lecons .cours2-table,
+    .lecons .cours1-tbody, .lecons .cours2-tbody,
+    .lecons .cours1-tbody tr, .lecons .cours2-tbody tr,
+    .lecons .cours1-tbody td, .lecons .cours2-tbody td {
+        display: block;
+    }
+	.lecons .cours1-tbody td, .lecons .cours2-tbody td {
+		text-align: left;
+		border-right: 0;
+        padding: 0 0 25px 0;
+		border-bottom: 1px solid transparent;
+	}
+	.lecons .cours1-tbody tr:last-child, .lecons .cours1-tbody td:last-child {
+		border-bottom:0;
+	}
+	.lecons .cours1-tbody tr:not(:first-child) .lecons .cours1-tbody td::before {
+		position: absolute;
+		color: var(--ecriture);
+		font-weight: bold;
+		width: calc(20% - 13px);
+		min-width: 90px;
+		padding: 5px;
+		border-bottom: 1px solid transparent;
+		margin-left: calc(-20% - 2px);
+		margin-top: -5px;
+    }
+    .lecons .cours1-tbody tr:last-child td:last-child::before {
+        border-bottom: 0;
+    }
+    .lecons .cours1-tbody p {
+        font-size: 2.5vw;
+    }
+    .lecons .cours1-tbody #LeconP {
+        font-size: 2.7vw;
+        padding-left: 3vw;
+    }
+    .lecons .cours1-tbody #LeconP-tab {
+        font-size: 2.7vw;
+        padding-left: 5vw;
+    }
+    .lecons .cours1-tbody #LeconP-tab-tab {
+        font-size: 2.7vw;
+        padding-left: 8vw;
+    }
+    .lecons .cours1-tbody #LeconP span {
+        font-size: 2.7vw;
+    }
+    .lecons .cours1-tbody #LeconP-tab span {
+        font-size: 2.7vw;
+    }
+}
+
+
+
+
+/* Mise en page de la deuxième partie du cours avec le langage SQL */
+.page .lecons .lecon-sous-titre {
+    margin: 0 0 2vw 0;
+    text-align: center;
+    font-size: 1.5vw;
+    color: var(--ecriture);
+    font-family: "Calibri",sans-serif;
+}
+.cours2-tbody h2 {
+    margin-bottom: 6.0pt;
+    line-height: 107%;
+    font-size: 2vw;
+    text-align: left;
+    font-family: 'Georgia',serif;
+    color: #5a5a5a;
+}
+.cours2-tbody .explication {
+    color: var(--ecriture);
+    margin-right: 2vw;
+    margin-bottom: 1.1vw;
+    margin-left: 0.7vw;
+    text-align: justify;
+    font-style: italic;
+    font-size: 1.2vw;
+    font-family: 'Calibri',sans-serif;
+    text-decoration: none;
+}
+.cours2-tbody .explication a {
+    color: var(--ecriture);
+    margin-right: 2vw;
+    margin-bottom: 1.1vw;
+    margin-left: 0.7vw;
+    text-align: justify;
+    font-style: italic;
+    font-size: 1.2vw;
+    font-family: 'Calibri',sans-serif;
+    text-decoration: none;
+}
+.cours2-tbody .explication-det {
+    color: var(--ecriture);
+    margin-right: 2vw;
+    margin-bottom: 0;
+    margin-left: 0.7vw;
+    text-align: justify;
+    font-style: italic;
+    font-size: 1.2vw;
+    font-family: 'Calibri',sans-serif;
+}
+.cours2-tbody .requete1,
+.cours2-tbody .requete2 {
+    margin-bottom: 0.7vw;
+    margin-left: 1.4vw;
+    text-align: left;
+}
+.cours2-tbody .requete-span {
+    font-size: 1.3vw;
+    color: var(--ecriture);
+    font-family: 'Courier New', Courier, monospace;
+}
+.cours2-tbody .requete-tab {
+    margin-left: 2.5vw;
+}
+.cours2-tbody .requete-tab-plus {
+    margin-left: 3.5vw;
+}
+.cours2-tbody .requete-esp {
+    margin-bottom: 1.5vw;
+}
+
+/* Mise en page pour tablette */
+@media screen and (max-width:800px) {
+    .page .lecons .lecon-sous-titre {
+        font-size: 3vw;
+        margin-top: -2vw;
+        margin-bottom: 5vw;
+    }
+    .cours2-tbody h2 {
+        font-size: 4vw;
+    }
+    .cours2-tbody .explication {
+        font-size: 2.7vw;
+    }
+    .cours2-tbody .explication-det {
+        font-size: 2.7vw;
+    }
+    .cours2-tbody .requete-span {
+        font-size: 3vw;
+    }
+    .cours2-tbody .requete-tab {
+        margin-left: 7vw;
+    }
+}
+
+
+
+/* Mise en page de la troisième partie du cours avec les différents opérateurs de comparaisons */
+.page .lecons .cours3-table {
+    color: var(--ecriture);
+}
+.cours3-tbody .td1,
+.cours3-tbody .td2 {
+    padding: 1vw;
+}
+.cours3-tbody .titre {
+    font-family: 'Georgia',serif;
+    margin-bottom: 1vw;
+    font-size: 2vw;
+    text-align: left;
+}
+.cours3-tbody .p1 {
+    text-align: right;
+    white-space: nowrap;
+    font-size: 2vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+.cours3-tbody .p2 {
+    text-align:left;
+    font-size: 2vw;
+    line-height: 1vw;
+    font-family:"Calibri",sans-serif;
+}
+
+@media screen and (max-width:800px) {
+    .cours3-tbody .td1,
+    .cours3-tbody .td2 {
+        padding: 1.5vw;
+    }
+    .cours3-tbody .titre {
+        margin-bottom: 2vw;
+        font-size: 4vw;
+    }
+    .cours3-tbody .p1 {
+        font-size: 4vw;
+    }
+    .cours3-tbody .p2 {
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+}

@@ -1,0 +1,14 @@
+
+/* MISE EN PAGE DU TITRE DE LA PAGE */
+.home-cours {
+    min-height: 55vh;
+}
+.home-cours .content {
+    max-width: 140rem;
+}
+/* Mise en page pour Smartphone */
+@media (max-width: 768px) {
+    .home-cours .content p {
+        font-size: 1rem;
+    }
+}
