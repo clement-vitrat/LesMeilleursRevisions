@@ -18,6 +18,22 @@
         
         <!-- Icons -->
         <link rel="icon" href="../img/logo.webp">
+
+        <style>
+            .cours3-tbody .classe {
+                font-size: 1.5vw;
+            }
+            @media screen and (max-width: 800px) {
+                .cours3-tbody .classe {
+                    font-size: 2.5vw;
+                }
+            }
+            @media screen and (max-width: 800px) {
+                .cours3-tbody .info {
+                    font-size: 3.5vw;
+                }
+            }
+        </style>
     </head>
 
     <body>
@@ -2006,8 +2022,37 @@
                             <h1>Qu'est-ce que les classes en Python ?</h1>
                         </div>
 
-                        <h4 class="cours0-h4">EN COURS DE CONCEPTION</h4>    
-                    
+                        <h4 class="cours0-h4">Défintion d'une classe</h4>    
+                        
+                        <table class="cours3-table" summary="Définition d'une classe 1/4" cellpadding="0" cellspacing="0">
+                            <tbody class="cours3-tbody">
+                                <tr>
+                                    <td class="td1">
+                                        <p class="p1 classe" style="text-align: left; padding-bottom: 5px; font-weight: bold;">#classe de niveau 1</p>
+                                        <p class="p1 classe" style="text-align: left;">classe A(object) :</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 20px;">x = 1</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 20px;">def f() : return A.x+1</p>
+
+                                        <p class="p1 classe" style="text-align: left; padding-top: 15px; padding-bottom: 5px; font-weight: bold;">#class de niveau 2</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">class B(A) :</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 20px;">y = 2</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 20px;">def g() : return B.x+B.y</p>
+
+                                        <p class="p1 classe" style="text-align: left; padding-top: 15px; padding-bottom: 5px; font-weight: bold;">#notion pointée</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">A.x, A.f()   # --> 1, 2</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">B.x, B.f()   # --> 1, 2</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">B.y, B.g()   # --> 2, 3</p>
+                                    </td>
+                                    <td class="td2">
+                                        <p class="p2 info" style="line-height: normal; padding-bottom: 15px;">⚡ Chaque classe définit un espace de noms qui va regrouper attributs (= constantes & variables) et méthodes (=fonctions).</p>
+                                        <p class="p2 info" style="line-height: normal; padding-bottom: 15px;">⚡ L'ensemble des attributs associé à une classe est appelé états (state).</p>
+                                        <p class="p2 info" style="line-height: normal;">⚡ L'ensemble des méthodes associés à une classe est appelé comportement (behavior).</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <hr class="separation">                    
                     </section>
 
                 </div>
