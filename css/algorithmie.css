@@ -169,12 +169,33 @@ html::-webkit-scrollbar-thumb {
     margin-top: 2rem;
     font-family: emoji;
 }
-.lecons .cours0-p {
+.lecons .cours0-p,
+.lecons .code-p {
     text-align: justify;
     color: var(--ecriture);
     font-size: 1.4vw;
     padding-bottom: 2rem;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.3;
+}
+
+.lecons .cours0-p span, .lecons .code-p span {
+    text-align: justify;
+    font-size: 1.4vw;
+    padding-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.3;
+}
+
+.lecons .code-p span .span-gris {
+    color: #999999;
+}
+
+.lecons .code-p {
+    color: var(--ecriture);
+    font-size: 1.4vw;
+    padding-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace;
     line-height: 1.3;
 }
 .lecons img {
@@ -205,7 +226,8 @@ html::-webkit-scrollbar-thumb {
 }
 /* Mise en page pour Smartphone */
 @media (max-width: 768px) {
-    .lecons .cours0-p {
+    .lecons .cours0-p, .lecons .code-p,
+    .lecons .cours0-p span, .lecons .code-p span {
         font-size: 1.6rem;
     }
     .lecons .cours0-h4 {
@@ -398,7 +420,7 @@ html::-webkit-scrollbar-thumb {
 /* Mise en page pour tablette */
 @media screen and (max-width:800px) {
     .page .lecons .lecon-sous-titre {
-        font-size: 3vw;
+        font-size: 1.6rem;
         margin-top: -2vw;
         margin-bottom: 5vw;
     }
