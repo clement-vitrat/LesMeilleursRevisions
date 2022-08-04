@@ -501,6 +501,7 @@ nav .theme #changeTheme {
     background-color: transparent;
     color: green;
     font-size: 20px;
+    z-index: -1;
 }
 
 
@@ -569,6 +570,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    z-index: -1;
 }
 footer .social_icon {
     position: relative;

@@ -150,7 +150,8 @@ html::-webkit-scrollbar-thumb {
 .lecons {
     padding: 3rem 5%;
 }
-.lecons .cours0-h4 {
+.lecons .cours0-h4,
+.lecons .cours0-h4 a {
     text-align: center;
     color: var(--ecriture);
     font-size: 4rem;
@@ -242,7 +243,8 @@ html::-webkit-scrollbar-thumb {
     .lecons .cours0-p, .lecons .code-p, .lecons .cours0-p span {
         font-size: 1.6rem;
     }
-    .lecons .cours0-h4 {
+    .lecons .cours0-h4,
+    .lecons .cours0-h4 a {
         font-size: 3rem;
     }
     .lecons #LeconSpan {
@@ -394,17 +396,7 @@ html::-webkit-scrollbar-thumb {
     font-family: 'Georgia',serif;
     color: #5a5a5a;
 }
-.cours2-tbody .explication {
-    color: var(--ecriture);
-    margin-right: 2vw;
-    margin-bottom: 1.1vw;
-    margin-left: 0.7vw;
-    text-align: justify;
-    font-style: italic;
-    font-size: 1.2vw;
-    font-family: 'Calibri',sans-serif;
-    text-decoration: none;
-}
+.cours2-tbody .explication,
 .cours2-tbody .explication a {
     color: var(--ecriture);
     margin-right: 2vw;
@@ -416,6 +408,12 @@ html::-webkit-scrollbar-thumb {
     font-family: 'Calibri',sans-serif;
     text-decoration: none;
 }
+.cours2-tbody .explication a {
+    color: green;
+    margin-right: 0;
+    margin-left: 0;
+}
+.cours2-tbody .explication a:hover {color: #c78b29}
 .cours2-tbody .explication-det {
     color: var(--ecriture);
     margin-right: 2vw;
@@ -512,6 +510,9 @@ html::-webkit-scrollbar-thumb {
     .cours3-tbody .p1 {
         font-size: 4vw;
     }
+    .cours3-tbody .propr {
+        white-space: normal;
+    }
     .cours3-tbody .p2 {
         font-size: 4vw;
         line-height: 5vw;
@@ -579,4 +580,159 @@ html::-webkit-scrollbar-thumb {
 }
 .select_lettre_css:hover {
     box-shadow: 5px solid salmon;
+}
+
+
+
+
+/* MISE EN FORME DE LA POP6UP POUR EXPLICATION PROPRIETE CSS */
+.popup {
+    cursor:help;
+    text-decoration:none;
+    color: var(--ecriture);
+    font-family: 'Courier New', Courier, monospace;
+}
+.popup:hover {
+    color: #c78b29;
+    text-decoration:none;
+}
+.separation-propri {
+    margin: 30px;
+    border: 0;
+    border-top: 1px solid var(--ecriture);
+}
+[data-ml-modal] {
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	overflow-x:hidden;
+	overflow-y:auto;
+	-webkit-overflow-scrolling:touch;
+	z-index:999;
+	width:0;
+	height:0;
+	opacity:0;
+}
+#modal-10::-webkit-scrollbar {width: 1rem;}
+#modal-10::-webkit-scrollbar-track {background: transparent;}
+#modal-10::-webkit-scrollbar-thumb {background: green; border-radius: 5rem;}
+[data-ml-modal]:target {
+	width:auto;
+	height:auto;
+	opacity:1;
+	-webkit-transition:  opacity 1s ease;
+	transition: opacity 1s ease;
+}
+[data-ml-modal]:target .modal-overlay {
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	cursor:pointer;
+	background-color: var(--background);
+	z-index:1;
+}
+[data-ml-modal] .modal-dialog {
+	border-radius:6px;
+	position:relative;
+	width: 90%;
+	max-width:660px;
+	max-height:70%;
+	margin:10% auto;
+	overflow-x:hidden;
+	overflow-y:auto;
+	z-index:2;
+}
+[data-ml-modal] .modal-dialog:hover {
+    box-shadow: 0 0 15px 3px var(--ecriture);
+}
+.modal-dialog-lg {max-width:820px !important;}
+
+[data-ml-modal] .modal-dialog > h3 {
+	background-color: var(--background);
+	border-bottom:1px solid #b3b3b3;
+	font-size:24px;
+	font-weight: 400;
+	margin:0;
+	padding:0.8em 56px .8em 27px; 
+    font-family: 'Courier New', Courier, monospace;
+}
+[data-ml-modal] .modal-content {background: var(--background); padding:23px 27px;}
+[data-ml-modal] .modal-close {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    color: green;
+    background-color: var(--background);
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    font-size: 31px;
+    line-height: 37px;
+    text-align: center;
+	-webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+[data-ml-modal] .modal-close:hover {
+    background-color: #c78b29;
+    color: #fff;
+    cursor:pointer;
+}
+[data-ml-modal] p:first-child, [data-ml-modal] p:last-child {margin:0;}
+@media (max-width:767px) {
+	[data-ml-modal] .modal-dialog {margin:20% auto;}
+}
+
+.modal-content .cours0-p-propri, .modal-content .code-p-propri {
+    font-size: 1.2vw;
+}
+.cours3-table .titre-propri {
+    font-size: 1.2vw;
+}
+.cours3-tbody .p1-propri, .cours3-tbody .p2-propri {
+    font-size: 1.2vw;
+}
+.span-css, .span-propri, .span-rens {
+    font-size: 1.2vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+.span-propri {
+    color: #B1865D;
+}
+.span-rens {
+    color: #61AFEF;
+}
+.cours3-tbody .td1-propri, .cours3-tbody .td2-propri {
+    padding: 0.5vw;
+}
+@media (min-width:768px) and (max-width: 1400px) {
+    .cours3-table .titre-propri, .modal-content .cours0-p-propri, .modal-content .code-p-propri {
+        font-size: 1.6vw;
+    }
+    .cours3-tbody .p1-propri, .cours3-tbody .p2-propri {
+        font-size: 1.5vw;
+    }
+    .span-css, .span-propri, .span-rens {
+        font-size: 1.5vw;
+    }
+    .cours3-tbody .td1-propri, .cours3-tbody .td2-propri {
+        padding: 0.5vw;
+    }
+}
+@media (max-width: 768px) {
+    .cours3-table .titre-propri, .modal-content .cours0-p-propri, .modal-content .code-p-propri {
+        font-size: 1.6rem;
+    }
+    .cours3-tbody .p1-propri, .cours3-tbody .p2-propri {
+        font-size: 1.5rem;
+    }
+    .span-css, .span-propri, .span-rens {
+        font-size: 1.5rem;
+    }
+    .cours3-tbody .td1-propri, .cours3-tbody .td2-propri {
+        padding: 1vw;
+    }
 }
