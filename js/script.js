@@ -1,35 +1,3 @@
-// Fonction qui permet de passer en mode sombre a partir d'une heure
-//function themeNuitJour(){
-//    console.log("Hello");
-
-    //const date = new Date()
-    //const hour = date.getHours()
-    // Si heure supérieur à 3 ou inférieur à 17 Faire :
-    //if(hour > 3 || hour < 20) {
-        //document.documentElement.style.setProperty('--ecriture', '#fff');
-            //document.documentElement.style.setProperty('--background', '#111');
-            //document.documentElement.style.setProperty('--bg-cours', '#222');
-            // Changement de l'image de fond
-            //const image_de_fond = document.getElementById('home');
-            //image_de_fond.style = 'background-image:url(img/dark-mode.jpg);';
-            //toggleTheme++;
-    //} else {
-        //document.documentElement.style.setProperty('--ecriture', '#111');
-        //document.documentElement.style.setProperty('--background', '#fff');
-        //document.documentElement.style.setProperty('--bg-cours', '#ccc');
-        // Changement de l'image de fond
-        //const image_de_fond = document.getElementById('home');
-        //image_de_fond.style = 'background-image:url(img/light-mode.webp);';
-        //toggleTheme--;
-    //}
-//}
-//themeNuitJour()
-
-
-
-
-
-
 // Mise en forme du bouton ChangeTheme
 const switchThemeBtn = document.querySelector('.changeTheme')
     let toggleTheme = 0;
@@ -87,3 +55,23 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+
+
+//MISE EN FORME DU GENERATEUR DE COULEUR
+function myColor() {
+                                  
+    // Get the value return by color picker
+    var color = document.getElementById('colorPicker').value;
+
+    // Take the hex code
+    document.getElementById('box').value = color;
+}
+
+// When user clicks over color picker,
+// myColor() function is called
+document.getElementById('colorPicker')
+    .addEventListener('input', myColor);
+
+
+
