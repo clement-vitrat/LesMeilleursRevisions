@@ -455,7 +455,7 @@ html::-webkit-scrollbar-thumb {
     .cours2-tbody h2 {
         font-size: 4vw;
     }
-    .cours2-tbody .explication {
+    .cours2-tbody .explication, .cours2-tbody .explication a {
         font-size: 2.7vw;
     }
     .cours2-tbody .explication-det {
@@ -695,7 +695,7 @@ html::-webkit-scrollbar-thumb {
 .cours3-tbody .p1-propri, .cours3-tbody .p2-propri {
     font-size: 1.2vw;
 }
-.span-css, .span-propri, .span-rens {
+.span-css, .span-propri, .span-rens, .span-texte {
     font-size: 1.2vw;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -704,6 +704,9 @@ html::-webkit-scrollbar-thumb {
 }
 .span-rens {
     color: #61AFEF;
+}
+.span-texte {
+    color: #53ABB8;
 }
 .cours3-tbody .td1-propri, .cours3-tbody .td2-propri {
     padding: 0.5vw;
@@ -715,7 +718,7 @@ html::-webkit-scrollbar-thumb {
     .cours3-tbody .p1-propri, .cours3-tbody .p2-propri {
         font-size: 1.5vw;
     }
-    .span-css, .span-propri, .span-rens {
+    .span-css, .span-propri, .span-rens, .span-texte {
         font-size: 1.5vw;
     }
     .cours3-tbody .td1-propri, .cours3-tbody .td2-propri {
@@ -729,7 +732,7 @@ html::-webkit-scrollbar-thumb {
     .cours3-tbody .p1-propri, .cours3-tbody .p2-propri {
         font-size: 1.5rem;
     }
-    .span-css, .span-propri, .span-rens {
+    .span-css, .span-propri, .span-rens, .span-texte {
         font-size: 1.5rem;
     }
     .cours3-tbody .td1-propri, .cours3-tbody .td2-propri {
