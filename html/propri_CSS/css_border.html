@@ -1844,19 +1844,19 @@
                                                 <div class="select">
                                                     <select class="select_css select_c" onChange="location.href=''+this.options[this.selectedIndex].value+'';">
                                                         <option style="color: var(--ecriture); background-color: var(--background);" value="../html_css_js.html#2cinq">Accueil</option>
-                                                        <option style="color: var(--ecriture); background-color: var(--background);" value="/html/propri_CSS/css_background.html#2cinq">Propriété CSS&nbsp;: BACKGROUND (arrière-plan)</option>
-                                                        <option style="color: var(--ecriture); background-color: var(--background);" value="/html/propri_CSS/css_border.html#2cinq" selected>Propriété CSS&nbsp;: BORDER (bordure)</option>
-                                                        <option style="color: var(--ecriture); background-color: var(--background);" value="/html/propri_CSS/css_couleur.html#2cinq">Propriété CSS&nbsp;: COLOR (couleur)</option>
-                                                        <option style="color: var(--ecriture); background-color: var(--background);" value="/html/propri_CSS/css_divers.html#2cinq">Propriété CSS&nbsp;: DIVERS</option>
-                                                        <option style="color: var(--ecriture); background-color: var(--background);" value="/html/propri_CSS/css_contenu.html#2cinq">Propriété CSS&nbsp;: GÉNÉRATION DE CONTENU</option>
-                                                        <option style="color: var(--ecriture); background-color: var(--background);" value="/html/propri_CSS/css_impression.html#2cinq">Propriété CSS&nbsp;: IMPRESSION</option>
-                                                        <option style="color: var(--ecriture); background-color: var(--background);" value="/html/propri_CSS/css_liste.html#2cinq">Propriété CSS&nbsp;: LISTE</option>
-                                                        <option style="color: var(--ecriture); background-color: var(--background);" value="/html/propri_CSS/css_outline.html#2cinq">Propriété CSS&nbsp;: OUTLINE (encadrement)</option>
-                                                        <option style="color: var(--ecriture); background-color: var(--background);" value="/html/propri_CSS/css_position.html#2cinq">Propriété CSS&nbsp;: POSITION et DIMENSIONS</option>
-                                                        <option style="color: var(--ecriture); background-color: var(--background);" value="/html/propri_CSS/css_ruby.html#2cinq">Propriété CSS&nbsp;: RUBY</option>
-                                                        <option style="color: var(--ecriture); background-color: var(--background);" value="/html/propri_CSS/css_son.html#2cinq">Propriété CSS&nbsp;: SON</option>
-                                                        <option style="color: var(--ecriture); background-color: var(--background);" value="/html/propri_CSS/css_table.html#2cinq">Propriété CSS&nbsp;: TABLE (tableaux)</option>
-                                                        <option style="color: var(--ecriture); background-color: var(--background);" value="/html/propri_CSS/css_texte.html#2cinq">Propriété CSS&nbsp;: TEXTE et CARACTERES</option>
+                                                        <option style="color: var(--ecriture); background-color: var(--background);" value="../propri_CSS/css_background.html#2cinq">Propriété CSS&nbsp;: BACKGROUND (arrière-plan)</option>
+                                                        <option style="color: var(--ecriture); background-color: var(--background);" value="../propri_CSS/css_border.html#2cinq" selected>Propriété CSS&nbsp;: BORDER (bordure)</option>
+                                                        <option style="color: var(--ecriture); background-color: var(--background);" value="../propri_CSS/css_texte.html#2cinq">Propriété CSS&nbsp;: TEXTE et CARACTERES</option>
+                                                        <option style="color: var(--ecriture); background-color: var(--background);" value="../propri_CSS/css_couleur.html#2cinq">Propriété CSS&nbsp;: COLOR (couleur)</option>
+                                                        <option style="color: var(--ecriture); background-color: var(--background);" value="../propri_CSS/css_table.html#2cinq">Propriété CSS&nbsp;: TABLE (tableaux)</option>
+                                                        <option style="color: var(--ecriture); background-color: var(--background);" value="../propri_CSS/css_position.html#2cinq">Propriété CSS&nbsp;: POSITION et DIMENSIONS</option>
+                                                        <option style="color: var(--ecriture); background-color: var(--background);" value="../propri_CSS/css_divers.html#2cinq">Propriété CSS&nbsp;: DIVERS</option>
+                                                        <option style="color: var(--ecriture); background-color: var(--background);" value="../propri_CSS/css_contenu.html#2cinq">Propriété CSS&nbsp;: GÉNÉRATION DE CONTENU</option>
+                                                        <option style="color: var(--ecriture); background-color: var(--background);" value="../propri_CSS/css_impression.html#2cinq">Propriété CSS&nbsp;: IMPRESSION</option>
+                                                        <option style="color: var(--ecriture); background-color: var(--background);" value="../propri_CSS/css_liste.html#2cinq">Propriété CSS&nbsp;: LISTE</option>
+                                                        <option style="color: var(--ecriture); background-color: var(--background);" value="../propri_CSS/css_outline.html#2cinq">Propriété CSS&nbsp;: OUTLINE (encadrement)</option>
+                                                        <option style="color: var(--ecriture); background-color: var(--background);" value="../propri_CSS/css_ruby.html#2cinq">Propriété CSS&nbsp;: RUBY</option>
+                                                        <option style="color: var(--ecriture); background-color: var(--background);" value="../propri_CSS/css_son.html#2cinq">Propriété CSS&nbsp;: SON</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -1877,7 +1877,24 @@
                                                 <td class="td2"><p class="titre">DÉFINITIONS</p></td>
                                             </tr>
                                             <tr>
-                                                <td class="td1"><p class="p1 propr" style="text-align: left;">border</p></td>
+                                                <td class="td1">
+                                                    <p class="p1 propr" style="text-align: left;"><a href="#modal-border" class="popup">border</a></p>
+                                                    <!-- Création de la PopUp avec plus d'information -->
+                                                    <div data-ml-modal id="modal-border">
+                                                        <a href="css_border.html#2cinq" class="modal-overlay" style="background: url(https://www.codeur.com/tuto/wp-content/uploads/2021/12/bordure-css.jpg) top right no-repeat; background-size: cover; background-position: center;"></a>
+                                                        <div class="modal-dialog modal-dialog-lg">
+                                                            <a href="css_border.html#2cinq" class="modal-close">&times;</a>
+                                                            <h3>border</h3>
+                                                            <div class="modal-content newspaper">
+                                                                <p class="cours0-p cours0-p-propri"><i>border</i> permet de définir les caractéristiques des bordures.</p>
+                                                                <p class="cours0-p cours0-p-propri">Les bordures CSS sont des propriétés très puissantes&nbsp;: vous pouvez styler des titres, mettre en évidence ou séparer des sections… et ce très rapidement, à condition de bien connaitre leur fonctionnement.</p>
+                                                                <p class="cours0-p cours0-p-propri">Les bordures CSS se placent entre la marge extérieure margin et la marge intérieure padding. Du coup, si l’on veut espacer les bordures et le contenu, il faut jouer avec le padding&nbsp;:</p>
+                                                                <p class="code-p code-p-propri" style="padding-left: 10px;"><span class="span-propri">border</span>: 3px red solid;</p>
+                                                                <p class="code-p code-p-propri" style="padding-left: 10px;"><span class="span-propri">padding</span>: 15px;</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
                                                 <td class="td2"><p class="p2" style="line-height: normal;">Caractéristiques des bordures.</p></td>
                                             </tr>
                                             <tr>
@@ -1885,15 +1902,108 @@
                                                 <td class="td2"></td>
                                             </tr>
                                             <tr>
-                                                <td class="td1"><p class="p1 propr" style="text-align: left;">border-color</p></td>
+                                                <td class="td1">
+                                                    <p class="p1 propr" style="text-align: left;"><a href="#modal-border-color" class="popup">border-color</a></p>
+                                                    <!-- Création de la PopUp avec plus d'information -->
+                                                    <div data-ml-modal id="modal-border-color">
+                                                        <a href="css_border.html#2cinq" class="modal-overlay" style="background: url(https://www.codeur.com/tuto/wp-content/uploads/2021/12/bordure-css.jpg) top right no-repeat; background-size: cover; background-position: center;"></a>
+                                                        <div class="modal-dialog modal-dialog-lg">
+                                                            <a href="css_border.html#2cinq" class="modal-close">&times;</a>
+                                                            <h3>border-color</h3>
+                                                            <div class="modal-content newspaper">
+                                                                <p class="cours0-p cours0-p-propri"><i>border-color</i> permet de définir la couleur des bordures</p>
+                                                                <p class="cours0-p cours0-p-propri">La valeur de la propriété <i>border-color</i> peut s'écrire de plusieurs façons&nbsp;:</p>
+                                                                <p class="cours0-p cours0-p-propri" style="padding-left: 10px;">Les notations de type «&nbsp;nom de couleur&nbsp;» (exemple&nbsp;: red, green…)&nbsp;:</p>
+                                                                <p class="code-p code-p-propri" style="padding-left: 10px; padding-bottom: 15px;"><span class="span-propri">border-color</span>: blue;</p>
+                                                                <p class="cours0-p cours0-p-propri" style="padding-left: 10px;">Les notations hexadécimales (exemple&nbsp;: #fefefe, #a2a2a2…)&nbsp;:</p>
+                                                                <p class="code-p code-p-propri" style="padding-left: 10px; padding-bottom: 15px;"><span class="span-propri">border-color</span>: #3F7AB5;</p>
+                                                                <p class="cours0-p cours0-p-propri" style="padding-left: 10px;">Les notations RGB et RGBa (exemple&nbsp;: rgb(125, 40, 78), rgba(0, 50, 64, 0.75)…)&nbsp;:</p>
+                                                                <p class="code-p code-p-propri" style="padding-left: 10px;"><span class="span-propri">border-color</span>: <span class="span-rens">rgb</span>(125,40,78);</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
                                                 <td class="td2"><p class="p2" style="line-height: normal;">Couleur des bordures.</p></td>
                                             </tr>
                                             <tr>
-                                                <td class="td1"><p class="p1 propr" style="text-align: left;">border-style</p></td>
+                                                <td class="td1">
+                                                    <p class="p1 propr" style="text-align: left;"><a href="#modal-border-style" class="popup">border-style</a></p>
+                                                    <!-- Création de la PopUp avec plus d'information -->
+                                                    <div data-ml-modal id="modal-border-style">
+                                                        <a href="css_border.html#2cinq" class="modal-overlay" style="background: url(https://www.codeur.com/tuto/wp-content/uploads/2021/12/bordure-css.jpg) top right no-repeat; background-size: cover; background-position: center;"></a>
+                                                        <div class="modal-dialog modal-dialog-lg">
+                                                            <a href="css_border.html#2cinq" class="modal-close">&times;</a>
+                                                            <h3>border-style</h3>
+                                                            <div class="modal-content newspaper">
+                                                                <p class="cours0-p cours0-p-propri"><i>border-style</i> permet de définir un style aux bordures.</p>
+                                                                <p class="cours0-p cours0-p-propri">Il existe 8 styles de bordures différents, changeables via la propriété CSS border-style&nbsp;:</p>
+                                                                
+                                                                <table class="cours3-table" summary="La propriété BORDER-STYLE" cellpadding="0" cellspacing="0">
+                                                                    <tbody class="cours3-tbody">
+                                                                        <tr>
+                                                                            <td class="td1 td1-propri"><p class="titre titre-propri">Style de bordure</p></td>
+                                                                            <td class="td2 td2-propri"><p class="titre titre-propri">Explication</p></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="td1 td1-propri"><p class="p1 propr p1-propri" style="text-align: left;">solid</p></td>
+                                                                            <td class="td2 td2-propri"><p class="p2 propr p2-propri" style="line-height: normal;">solide simple</p></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="td1 td1-propri"><p class="p1 propr p1-propri" style="text-align: left;">double</p></td>
+                                                                            <td class="td2 td2-propri"><p class="p2 propr p2-propri" style="line-height: normal;">solide double</p></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="td1 td1-propri"><p class="p1 propr p1-propri" style="text-align: left;">dotted</p></td>
+                                                                            <td class="td2 td2-propri"><p class="p2 propr p2-propri" style="line-height: normal;">en pointillés</p></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="td1 td1-propri"><p class="p1 propr p1-propri" style="text-align: left;">dashed</p></td>
+                                                                            <td class="td2 td2-propri"><p class="p2 propr p2-propri" style="line-height: normal;">constituée de tirets</p></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="td1 td1-propri"><p class="p1 propr p1-propri" style="text-align: left;">groove</p></td>
+                                                                            <td class="td2 td2-propri"><p class="p2 propr p2-propri" style="line-height: normal;">incrustée avec effet 3D, inverse de ridge</p></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="td1 td1-propri"><p class="p1 propr p1-propri" style="text-align: left;">ridge</p></td>
+                                                                            <td class="td2 td2-propri"><p class="p2 propr p2-propri" style="line-height: normal;">en relief avec effet 3D, inverse de groove</p></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="td1 td1-propri"><p class="p1 propr p1-propri" style="text-align: left;">inset</p></td>
+                                                                            <td class="td2 td2-propri"><p class="p2 propr p2-propri" style="line-height: normal;">enfoncée dans la page, inverse de outset</p></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="td1 td1-propri"><p class="p1 propr p1-propri" style="text-align: left;">outset</p></td>
+                                                                            <td class="td2 td2-propri"><p class="p2 propr p2-propri" style="line-height: normal;">en relief par rapport au reste de la page, inverse de inset</p></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
                                                 <td class="td2"><p class="p2" style="line-height: normal;">Style des bordures.</p></td>
                                             </tr>
                                             <tr>
-                                                <td class="td1"><p class="p1 propr" style="text-align: left;">border-width</p></td>
+                                                <td class="td1">
+                                                    <p class="p1 propr" style="text-align: left;"><a href="#modal-border-width" class="popup">border-width</a></p>
+                                                    <!-- Création de la PopUp avec plus d'information -->
+                                                    <div data-ml-modal id="modal-border-width">
+                                                        <a href="css_border.html#2cinq" class="modal-overlay" style="background: url(https://www.codeur.com/tuto/wp-content/uploads/2021/12/bordure-css.jpg) top right no-repeat; background-size: cover; background-position: center;"></a>
+                                                        <div class="modal-dialog modal-dialog-lg">
+                                                            <a href="css_border.html#2cinq" class="modal-close">&times;</a>
+                                                            <h3>border-width</h3>
+                                                            <div class="modal-content newspaper">
+                                                                <p class="cours0-p cours0-p-propri"><i>border-width</i> définit la largeur de la bordure d'un élément.</p>
+                                                                <p class="cours0-p cours0-p-propri">Cette propriété est équivalente à l'attribut HTML déprécié cellspacing mais une deuxième valeur peut être utilisée afin d'obtenir un espacement vertical différent de l'espacement horizontal.</p>
+                                                                <p class="cours0-p cours0-p-propri" style="padding-bottom: 5px;">Exemples&nbsp;:</p>
+                                                                <p class="code-p code-p-propri" style="padding-left: 10px; padding-bottom: 5px; margin: 10px 0;"><span class="span-propri">border-width</span>: thick;</p>
+                                                                <p class="code-p code-p-propri" style="padding-left: 10px; padding-bottom: 5px; margin: 10px 0;"><span class="span-propri">border-width</span>: 4px 1.25rem;</p>
+                                                                <p class="code-p code-p-propri" style="padding-left: 10px; padding-bottom: 5px; margin: 10px 0;"><span class="span-propri">border-width</span>: 0 4px 8px 12px;</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
                                                 <td class="td2"><p class="p2" style="line-height: normal;">Epaisseur des bordures.</p></td>
                                             </tr>
                                             <tr>
@@ -1901,11 +2011,45 @@
                                                 <td class="td2"></td>
                                             </tr>
                                             <tr>
-                                                <td class="td1"><p class="p1 propr" style="text-align: left;">border-collapse</p></td>
+                                                <td class="td1">
+                                                    <p class="p1 propr" style="text-align: left;"><a href="#modal-border-collapse" class="popup">border-collapse</a></p>
+                                                    <!-- Création de la PopUp avec plus d'information -->
+                                                    <div data-ml-modal id="modal-border-collapse">
+                                                        <a href="css_border.html#2cinq" class="modal-overlay" style="background: url(https://www.codeur.com/tuto/wp-content/uploads/2021/12/bordure-css.jpg) top right no-repeat; background-size: cover; background-position: center;"></a>
+                                                        <div class="modal-dialog modal-dialog-lg">
+                                                            <a href="css_border.html#2cinq" class="modal-close">&times;</a>
+                                                            <h3>border-collapse</h3>
+                                                            <div class="modal-content newspaper">
+                                                                <p class="cours0-p cours0-p-propri"><i>border-collapse</i> détermine si les bordures d'un tableau sont séparées ou fusionnées.</p>
+                                                                <p class="cours0-p cours0-p-propri">Quand elles sont séparées, chaque cellule du tableau a ses propres bordures, distinctes. Quand elles sont fusionnées, les bordures des cellules sont partagées.</p>
+                                                                <p class="code-p code-p-propri" style="padding-left: 10px;"><span class="span-propri">border-collapse</span>: separate;</p>
+                                                                <p class="code-p code-p-propri" style="padding-left: 10px;"><span class="span-propri">border-collapse</span>: callapse;</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
                                                 <td class="td2"><p class="p2" style="line-height: normal;">Définit si les bordures d'un tableau sont séparées ou fusionnées.</p></td>
                                             </tr>
                                             <tr>
-                                                <td class="td1"><p class="p1 propr" style="text-align: left;">border-spacing</p></td>
+                                                <td class="td1">
+                                                    <p class="p1 propr" style="text-align: left;"><a href="#modal-border-spacing" class="popup">border-spacing</a></p>
+                                                    <!-- Création de la PopUp avec plus d'information -->
+                                                    <div data-ml-modal id="modal-border-spacing">
+                                                        <a href="css_border.html#2cinq" class="modal-overlay" style="background: url(https://www.codeur.com/tuto/wp-content/uploads/2021/12/bordure-css.jpg) top right no-repeat; background-size: cover; background-position: center;"></a>
+                                                        <div class="modal-dialog modal-dialog-lg">
+                                                            <a href="css_border.html#2cinq" class="modal-close">&times;</a>
+                                                            <h3>border-spacing</h3>
+                                                            <div class="modal-content newspaper">
+                                                                <p class="cours0-p cours0-p-propri"><i>border-spacing</i> définit la distance qu'il y a entre les bordures de cellules adjacentes d'un tableau (uniquement lorsque border-collapse vaut separate).</p>
+                                                                <p class="cours0-p cours0-p-propri">Cette propriété est équivalente à l'attribut HTML déprécié cellspacing mais une deuxième valeur peut être utilisée afin d'obtenir un espacement vertical différent de l'espacement horizontal.</p>
+                                                                <p class="cours0-p cours0-p-propri" style="padding-bottom: 5px;">Exemples&nbsp;:</p>
+                                                                <p class="code-p code-p-propri" style="padding-left: 10px; padding-bottom: 5px;"><span class="span-propri">border-spacing</span>: 0;</p>
+                                                                <p class="code-p code-p-propri" style="padding-left: 10px; padding-bottom: 5px;"><span class="span-propri">border-spacing</span>: 5px;</p>
+                                                                <p class="code-p code-p-propri" style="padding-left: 10px; padding-bottom: 5px;"><span class="span-propri">border-spacing</span>: 5px 1rem;</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
                                                 <td class="td2"><p class="p2" style="line-height: normal;">Définit la distance qu'il y a entre les bordures de cellules adjacentes d'un tableau.</p></td>
                                             </tr>
                                             <tr>
@@ -1913,80 +2057,79 @@
                                                 <td class="td2"></td>
                                             </tr>
                                             <tr>
-                                                <td class="td1"><p class="p1 propr" style="text-align: left;">border-bottom</p></td>
-                                                <td class="td2"><p class="p2" style="line-height: normal;">Caractéristiques de la bordure du bas.</p></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="td1"><p class="p1 propr" style="text-align: left;">border-bottom-color</p></td>
-                                                <td class="td2"><p class="p2" style="line-height: normal;">Couleur de la bordure du bas.</p></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="td1"><p class="p1 propr" style="text-align: left;">border-bottom-style</p></td>
-                                                <td class="td2"><p class="p2" style="line-height: normal;">Style de la bordure du bas.</p></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="td1"><p class="p1 propr" style="text-align: left;">border-bottom-width</p></td>
-                                                <td class="td2"><p class="p2" style="line-height: normal;">Epaisseur de la bordure du bas.</p></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="td1"></td>
-                                                <td class="td2"></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="td1"><p class="p1 propr" style="text-align: left;">border-left</p></td>
-                                                <td class="td2"><p class="p2" style="line-height: normal;">Caractéristiques de la bordure de gauche.</p></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="td1"><p class="p1 propr" style="text-align: left;">border-left-color</p></td>
-                                                <td class="td2"><p class="p2" style="line-height: normal;">Couleur de la bordure de gauche.</p></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="td1"><p class="p1 propr" style="text-align: left;">border-left-style</p></td>
-                                                <td class="td2"><p class="p2" style="line-height: normal;">Style de la bordure de gauche.</p></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="td1"><p class="p1 propr" style="text-align: left;">border-left-width</p></td>
-                                                <td class="td2"><p class="p2" style="line-height: normal;">Epaisseur de la bordure de gauche.</p></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="td1"></td>
-                                                <td class="td2"></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="td1"><p class="p1 propr" style="text-align: left;">border-right</p></td>
-                                                <td class="td2"><p class="p2" style="line-height: normal;">Caractéristiques de la bordure de droite.</p></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="td1"><p class="p1 propr" style="text-align: left;">border-right-color</p></td>
-                                                <td class="td2"><p class="p2" style="line-height: normal;">Couleur de la bordure de droite.</p></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="td1"><p class="p1 propr" style="text-align: left;">border-right-style</p></td>
-                                                <td class="td2"><p class="p2" style="line-height: normal;">Style de la bordure de droite.</p></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="td1"><p class="p1 propr" style="text-align: left;">border-right-width</p></td>
-                                                <td class="td2"><p class="p2" style="line-height: normal;">Epaisseur de la bordure de droite.</p></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="td1"></td>
-                                                <td class="td2"></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="td1"><p class="p1 propr" style="text-align: left;">border-top</p></td>
+                                                <td class="td1">
+                                                    <p class="p1 propr" style="text-align: left;"><a href="#modal-border-top" class="popup">border-top</a></p>
+                                                    <!-- Création de la PopUp avec plus d'information -->
+                                                    <div data-ml-modal id="modal-border-top">
+                                                        <a href="css_border.html#2cinq" class="modal-overlay" style="background: url(https://www.codeur.com/tuto/wp-content/uploads/2021/12/bordure-css.jpg) top right no-repeat; background-size: cover; background-position: center;"></a>
+                                                        <div class="modal-dialog modal-dialog-lg">
+                                                            <a href="css_border.html#2cinq" class="modal-close">&times;</a>
+                                                            <h3>border-top</h3>
+                                                            <div class="modal-content newspaper">
+                                                                <p class="cours0-p cours0-p-propri"><i>border-top</i> permet de définit la bordure du côté haut d'un élément.</p>
+                                                                <p class="cours0-p cours0-p-propri">Il est possible d’aussi utiliser des propriétés plus spécifiques comme border-top-color (modifier la couleur de la bordure gauche), border-top-width (modifier l’épaisseur de la bordure du dessus), etc. Cela permet de créer des bordures vraiment uniques, cependant je vous conseille d’utiliser de manière générale les raccourcis comme border, border-top, etc. C’est une question de simplicité et de clarté de code CSS&nbsp;!</p>
+                                                                <p class="code-p code-p-propri" style="padding-right: 10px; padding-bottom: 0; margin-bottom: 0; border-top: 4mm ridge rgba(211, 220, 50, .6);"><span class="span-propri">border-top</span>: 4mm ridge rgba(211, 220, 50, .6);</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
                                                 <td class="td2"><p class="p2" style="line-height: normal;">Caractéristiques de la bordure du haut.</p></td>
                                             </tr>
                                             <tr>
-                                                <td class="td1"><p class="p1 propr" style="text-align: left;">border-top-color</p></td>
-                                                <td class="td2"><p class="p2" style="line-height: normal;">Couleur de la bordure du haut.</p></td>
+                                                <td class="td1">
+                                                    <p class="p1 propr" style="text-align: left;"><a href="#modal-border-right" class="popup">border-right</a></p>
+                                                    <!-- Création de la PopUp avec plus d'information -->
+                                                    <div data-ml-modal id="modal-border-right">
+                                                        <a href="css_border.html#2cinq" class="modal-overlay" style="background: url(https://www.codeur.com/tuto/wp-content/uploads/2021/12/bordure-css.jpg) top right no-repeat; background-size: cover; background-position: center;"></a>
+                                                        <div class="modal-dialog modal-dialog-lg">
+                                                            <a href="css_border.html#2cinq" class="modal-close">&times;</a>
+                                                            <h3>border-right</h3>
+                                                            <div class="modal-content newspaper">
+                                                                <p class="cours0-p cours0-p-propri"><i>border-right</i> permet de définit la bordure droite d'un élément.</p>
+                                                                <p class="cours0-p cours0-p-propri">Il est possible d’aussi utiliser des propriétés plus spécifiques comme border-right-color (modifier la couleur de la bordure gauche), border-right-width (modifier l’épaisseur de la bordure du dessus), etc. Cela permet de créer des bordures vraiment uniques, cependant je vous conseille d’utiliser de manière générale les raccourcis comme border, border-right, etc. C’est une question de simplicité et de clarté de code CSS&nbsp;!</p>
+                                                                <p class="code-p code-p-propri" style="padding-right: 10px; padding-bottom: 0; margin-bottom: 0; border-right: 1rem solid;"><span class="span-propri">border-right</span>: 1rem solid;</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="td2"><p class="p2" style="line-height: normal;">Caractéristiques de la bordure de droite.</p></td>
                                             </tr>
                                             <tr>
-                                                <td class="td1"><p class="p1 propr" style="text-align: left;">border-top-style</p></td>
-                                                <td class="td2"><p class="p2" style="line-height: normal;">Style de la bordure du haut.</p></td>
+                                                <td class="td1">
+                                                    <p class="p1 propr" style="text-align: left;"><a href="#modal-border-bottom" class="popup">border-bottom</a></p>
+                                                    <!-- Création de la PopUp avec plus d'information -->
+                                                    <div data-ml-modal id="modal-border-bottom">
+                                                        <a href="css_border.html#2cinq" class="modal-overlay" style="background: url(https://www.codeur.com/tuto/wp-content/uploads/2021/12/bordure-css.jpg) top right no-repeat; background-size: cover; background-position: center;"></a>
+                                                        <div class="modal-dialog modal-dialog-lg">
+                                                            <a href="css_border.html#2cinq" class="modal-close">&times;</a>
+                                                            <h3>border-bottom</h3>
+                                                            <div class="modal-content newspaper">
+                                                                <p class="cours0-p cours0-p-propri"><i>border-bottom</i> permet de définit la bordure du côté bas d'un élément.</p>
+                                                                <p class="cours0-p cours0-p-propri">Il est possible d’aussi utiliser des propriétés plus spécifiques comme border-bottom-color (modifier la couleur de la bordure gauche), border-bottom-width (modifier l’épaisseur de la bordure du dessus), etc. Cela permet de créer des bordures vraiment uniques, cependant je vous conseille d’utiliser de manière générale les raccourcis comme border, border-bottom, etc. C’est une question de simplicité et de clarté de code CSS&nbsp;!</p>
+                                                                <p class="code-p code-p-propri" style="padding-left: 10px; padding-bottom: 0; margin-bottom: 0; border-bottom: dashed red;"><span class="span-propri">border-bottom</span>: dashed red;</p>                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="td2"><p class="p2" style="line-height: normal;">Caractéristiques de la bordure du bas.</p></td>
                                             </tr>
                                             <tr>
-                                                <td class="td1"><p class="p1 propr" style="text-align: left;">border-top-width</p></td>
-                                                <td class="td2"><p class="p2" style="line-height: normal;">Epaisseur de la bordure du haut.</p></td>
+                                                <td class="td1">
+                                                    <p class="p1 propr" style="text-align: left;"><a href="#modal-border-left" class="popup">border-left</a></p>
+                                                    <!-- Création de la PopUp avec plus d'information -->
+                                                    <div data-ml-modal id="modal-border-left">
+                                                        <a href="css_border.html#2cinq" class="modal-overlay" style="background: url(https://www.codeur.com/tuto/wp-content/uploads/2021/12/bordure-css.jpg) top right no-repeat; background-size: cover; background-position: center;"></a>
+                                                        <div class="modal-dialog modal-dialog-lg">
+                                                            <a href="css_border.html#2cinq" class="modal-close">&times;</a>
+                                                            <h3>border-left</h3>
+                                                            <div class="modal-content newspaper">
+                                                                <p class="cours0-p cours0-p-propri"><i>border-left</i> permet de définit la bordure gauche d'un élément.</p>
+                                                                <p class="cours0-p cours0-p-propri">Il est possible d’aussi utiliser des propriétés plus spécifiques comme border-left-color (modifier la couleur de la bordure gauche), border-left-width (modifier l’épaisseur de la bordure du dessus), etc. Cela permet de créer des bordures vraiment uniques, cependant je vous conseille d’utiliser de manière générale les raccourcis comme border, border-left, etc. C’est une question de simplicité et de clarté de code CSS&nbsp;!</p>
+                                                                <p class="code-p code-p-propri" style="padding-left: 10px; padding-bottom: 0; margin-bottom: 0; border-left: thick double #32a1ce;"><span class="span-propri">border-left</span>: thick double #32a1ce;</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="td2"><p class="p2" style="line-height: normal;">Caractéristiques de la bordure de gauche.</p></td>
                                             </tr>
                                         </tbody>
                                     </table>
