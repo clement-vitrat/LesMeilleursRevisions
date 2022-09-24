@@ -1,0 +1,741 @@
+#home {
+    background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/html_css_js.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+}
+/* Mise en page de roulette */
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+    background: green;
+    border-radius: 1rem;
+}
+
+/* MISE EN PAGE DU TITRE DE LA PAGE */
+.home-cours {
+    min-height: 55vh;
+}
+.home-cours .content {
+    max-width: 140rem;
+}
+/* Mise en page pour Smartphone */
+@media (max-width: 768px) {
+    .home-cours .content p {
+        font-size: 1rem;
+    }
+    .home .content h3 {
+        font-size: 10vw;
+    }
+}
+
+
+.service .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap:1.5rem;
+}
+
+.service .box-container .box{
+    border-radius: .5rem;
+    background:#333;
+    text-align: center;
+    padding:2.5rem;
+}
+
+.service .box-container .box i{
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    background:var(--main-color);
+    color:#fff;
+}
+
+.service .box-container .box h3{
+    font-size: 2rem;
+    color:#fff;
+    padding:1rem 0;
+}
+
+.service .box-container .box p{
+    font-size: 1.4rem;
+    color:#eee;
+    line-height: 1.8;
+}
+
+
+/* MISE EN PAGE DES DIFFERENTES PAGES DE LECONS */
+.cours ul li a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--ecriture);
+}
+.cours ul li a:hover {
+    color: red;
+}
+.cours .page {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    overflow-y: auto;
+    z-index: 0;
+    background: var(--background);
+}
+.cours .page:target {
+    left: 0vw;
+    z-index: 1;
+}
+.cours .partie-cours {
+    min-height: 40vh;
+}
+.cours .partie-cours .content {
+    max-width: 150rem;
+}
+.cours .partie-cours .content span {
+    font-size: 3vw;
+}
+.cours .partie-cours .content h3 {
+    font-size: 5vw;
+}
+
+
+/* ANIMATIONS ET CREATION DU BOUTONT RETOUR AU DIFFERENTS COURS */
+.cours .partie-cours .content p a {
+    color: #fff;
+    cursor: pointer;
+    text-align:center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-size: 300% 100%;
+    text-decoration: none;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+.cours .partie-cours .content p a:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.cours .partie-cours .content p a:focus {
+    outline: none;
+}
+
+.cours .box-container .box .content {
+    height: 100%;
+}
+
+/* Mise en page de chaque partie de cours */
+.lecons {
+    padding: 3rem 5%;
+}
+.lecons .cours0-h4,
+.lecons .cours0-h4 a {
+    text-align: center;
+    color: var(--ecriture);
+    font-size: 4rem;
+    font-style: italic;
+    margin-bottom: 3rem;
+    font-family: emoji;
+}
+.lecons .cours0-h5 {
+    text-align: center;
+    color: var(--ecriture);
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.lecons .cours0-h6 {
+    color: var(--ecriture);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-family: emoji;
+}
+.lecons .cours0-p {
+    text-align: justify;
+    color: var(--ecriture);
+    font-size: 1.4vw;
+    padding-bottom: 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.3;
+}
+.lecons .cours0-p span {
+    text-align: justify;
+    color: violet;
+    font-size: 1.4vw;
+    padding-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.3;
+}
+.lecons .cours0-p a {
+    text-align: justify;
+    cursor: pointer;
+    color: green;
+    font-size: 1.4vw;
+    padding-bottom: 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.3;
+}
+.lecons .code-p {
+    color: var(--ecriture);
+    font-size: 1.4vw;
+    padding-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.3;
+}
+
+.lecons img {
+    width: 75%;
+    display: grid;
+    margin: auto;
+}
+.lecons .imageflottante-left {
+    float: left;
+    width: 130px;
+    height: auto;
+    margin-right: 15px;
+}
+.lecons .imageflottante-right {
+    float: right;
+    width: 130px;
+    height: auto;
+    margin-left: 15px;
+}
+.lecons #LeconSpan {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 1.8vw;
+}
+.lecons .espacement {
+    margin: 4vw;
+    border: 0;
+    border-top: 1px solid var(--ecriture);
+}
+@media (max-width:980px) {
+    .lecons img {
+        width: 100%;
+    }
+}
+/* Mise en page pour Smartphone */
+@media (max-width: 768px) {
+    .lecons .cours0-p, .lecons .code-p, .lecons .cours0-p span {
+        font-size: 1.6rem;
+    }
+    .lecons .cours0-h4,
+    .lecons .cours0-h4 a {
+        font-size: 3rem;
+    }
+    .lecons #LeconSpan {
+        font-size: 1.8vw;
+    }
+    .lecons .espacement {
+        margin: 10vw;
+    }
+}
+
+
+
+/* MISE EN PAGE DE LA PARTIE 2 */
+.lecons .cours1-table,
+.lecons .cours2-table {
+	border-collapse: collapse;
+	width: 100%;
+}
+.lecons .cours1-tbody td,
+.lecons .cours2-tbody td {
+	text-align: center;
+	padding: 5px 0 30px 10px;
+	border-right: 1px solid var(--separation-table);
+}
+.lecons .cours1-tbody td:last-child,
+.lecons .cours2-tbody td:last-child {
+	border-right: 0;
+}
+.lecons .cours1-tbody p {
+    color: var(--ecriture);
+    text-align: left;
+    font-size: 1.3vw;
+    padding-bottom: 0.6rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.lecons .cours1-tbody #LeconP {
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    color: var(--ecriture);
+}
+.lecons .cours1-tbody #LeconP-tab {
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5vw;
+    padding-left: 2.5vw;
+    padding-right: 1vw;
+    color: var(--ecriture);
+}
+.lecons .cours1-tbody #LeconP-tab-tab {
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5vw;
+    padding-left: 4vw;
+    padding-right: 1vw;
+    color: var(--ecriture);
+}
+.lecons .cours1-tbody #LeconP span {
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5vw;
+    color: violet;
+}
+.lecons .cours1-tbody #LeconP-tab span {
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5vw;
+    color: violet;
+}
+.lecons .cours1-tbody #LeconP-tab-tab span {
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5vw;
+    color: violet;
+}
+
+@media screen and (max-width:800px) {
+    .lecons .cours1-tbody td:before, .lecons .cours2-tbody td:before,
+    .lecons .cours1-table, .lecons .cours2-table,
+    .lecons .cours1-tbody, .lecons .cours2-tbody,
+    .lecons .cours1-tbody tr, .lecons .cours2-tbody tr,
+    .lecons .cours1-tbody td, .lecons .cours2-tbody td {
+        display: block;
+    }
+	.lecons .cours1-tbody td, .lecons .cours2-tbody td {
+		text-align: left;
+		border-right: 0;
+        padding: 0 0 25px 0;
+		border-bottom: 1px solid transparent;
+	}
+	.lecons .cours1-tbody tr:last-child, .lecons .cours1-tbody td:last-child {
+		border-bottom:0;
+	}
+	.lecons .cours1-tbody tr:not(:first-child) .lecons .cours1-tbody td::before {
+		position: absolute;
+		color: var(--ecriture);
+		font-weight: bold;
+		width: calc(20% - 13px);
+		min-width: 90px;
+		padding: 5px;
+		border-bottom: 1px solid transparent;
+		margin-left: calc(-20% - 2px);
+		margin-top: -5px;
+    }
+    .lecons .cours1-tbody tr:last-child td:last-child::before {
+        border-bottom: 0;
+    }
+    .lecons .cours1-tbody p {
+        font-size: 2.5vw;
+    }
+    .lecons .cours1-tbody #LeconP {
+        font-size: 2.7vw;
+        padding-left: 3vw;
+    }
+    .lecons .cours1-tbody #LeconP-tab {
+        font-size: 2.7vw;
+        padding-left: 5vw;
+    }
+    .lecons .cours1-tbody #LeconP-tab-tab {
+        font-size: 2.7vw;
+        padding-left: 8vw;
+    }
+    .lecons .cours1-tbody #LeconP span {
+        font-size: 2.7vw;
+    }
+    .lecons .cours1-tbody #LeconP-tab span {
+        font-size: 2.7vw;
+    }
+}
+
+
+
+
+/* Mise en page de la deuxième partie du cours avec le langage SQL */
+.page .lecons .lecon-sous-titre {
+    margin: 0 0 2vw 0;
+    text-align: center;
+    font-size: 1.5vw;
+    color: var(--ecriture);
+    font-family: "Calibri",sans-serif;
+}
+.cours2-tbody h2 {
+    margin-bottom: 6.0pt;
+    line-height: 107%;
+    font-size: 2vw;
+    text-align: left;
+    font-family: 'Georgia',serif;
+    color: #5a5a5a;
+}
+.cours2-tbody .explication,
+.cours2-tbody .explication a {
+    color: var(--ecriture);
+    margin-right: 2vw;
+    margin-bottom: 1.1vw;
+    margin-left: 0.7vw;
+    text-align: justify;
+    font-style: italic;
+    font-size: 1.2vw;
+    font-family: 'Calibri',sans-serif;
+    text-decoration: none;
+}
+.cours2-tbody .explication a {
+    color: green;
+    margin-right: 0;
+    margin-left: 0;
+}
+.cours2-tbody .explication a:hover {color: #c78b29}
+.cours2-tbody .explication-det {
+    color: var(--ecriture);
+    margin-right: 2vw;
+    margin-bottom: 0;
+    margin-left: 0.7vw;
+    text-align: justify;
+    font-style: italic;
+    font-size: 1.2vw;
+    font-family: 'Calibri',sans-serif;
+}
+.cours2-tbody .requete1,
+.cours2-tbody .requete2 {
+    margin-bottom: 0.7vw;
+    margin-left: 1.4vw;
+    text-align: left;
+}
+.cours2-tbody .requete-span {
+    font-size: 1.3vw;
+    color: var(--ecriture);
+    font-family: 'Courier New', Courier, monospace;
+}
+.cours2-tbody .requete-tab {
+    margin-left: 2.5vw;
+}
+.cours2-tbody .requete-tab-plus {
+    margin-left: 3.5vw;
+}
+.cours2-tbody .requete-esp {
+    margin-bottom: 1.5vw;
+}
+
+/* Mise en page pour tablette */
+@media screen and (max-width:800px) {
+    .page .lecons .lecon-sous-titre {
+        font-size: 3vw;
+        margin-top: -2vw;
+        margin-bottom: 5vw;
+    }
+    .cours2-tbody h2 {
+        font-size: 4vw;
+    }
+    .cours2-tbody .explication, .cours2-tbody .explication a {
+        font-size: 2.7vw;
+    }
+    .cours2-tbody .explication-det {
+        font-size: 2.7vw;
+    }
+    .cours2-tbody .requete-span {
+        font-size: 3vw;
+    }
+    .cours2-tbody .requete-tab {
+        margin-left: 7vw;
+    }
+}
+
+
+
+/* Mise en page de la troisième partie du cours avec les différents opérateurs de comparaisons */
+.page .lecons .cours3-table {
+    color: var(--ecriture);
+}
+.cours3-tbody .td1,
+.cours3-tbody .td2 {
+    padding: 1vw;
+}
+.cours3-tbody .titre {
+    font-family: 'Georgia',serif;
+    margin-bottom: 1vw;
+    font-size: 2vw;
+    text-align: left;
+}
+.cours3-tbody .p1 {
+    text-align: right;
+    white-space: nowrap;
+    font-size: 2vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+.cours3-tbody .p2 {
+    text-align:left;
+    font-size: 2vw;
+    line-height: 1vw;
+    font-family:"Calibri",sans-serif;
+}
+
+@media screen and (max-width:800px) {
+    .cours3-tbody .td1,
+    .cours3-tbody .td2 {
+        padding: 1.5vw;
+    }
+    .cours3-tbody .titre {
+        margin-bottom: 2vw;
+        font-size: 4vw;
+    }
+    .cours3-tbody .p1 {
+        font-size: 4vw;
+    }
+    .cours3-tbody .propr {
+        white-space: normal;
+    }
+    .cours3-tbody .p2 {
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+}
+
+
+
+
+
+
+/*Pas important, juste pour positioner la liste déroulante en milieude page */
+.select_lettre_css {
+    display: flex;
+    flex-direction: column;
+    align-items : center;
+    justify-content: center;
+}
+/*Réinitilaisation de la liste déroulante*/
+.select_lettre_css .select .select_css {
+    appearance: none;
+    outline: 0;
+    border: 0 !important;
+    font-size: 1.2em;
+    background-image: linear-gradient(to right, #66b5ea, #4ba276, #6b8dd6, #8E37D7);
+    box-shadow: 0 4px 15px 0 rgb(116 79 168 / 75%);
+}
+/* Mise en forme de la div .select*/
+.select_lettre_css .select {
+    position: relative;
+    width: 302px;
+    height: 29px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+/* Mise en forme de la balise select*/
+.select_lettre_css .select .select_css {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding-left: 15px;
+    color: var(--ecriture);
+    cursor: pointer;
+    text-align: left;
+    background-color: var(--background);
+}
+.select_lettre_css .select .select_c {
+    color: #fff;
+}
+/* Mise en place de la flèche */
+.select_lettre_css .select::after {
+    content: '\276F';
+    position: absolute;
+    top: 20%;
+    color: yellow;
+    right: 0;
+    padding: 0 15px;
+    pointer-events: none;
+    transform: rotate(90deg);
+    font-size: 1.3em;
+    background: transparent;
+}
+.select_lettre_css .select:hover::after {
+    color: orange;
+}
+.select_lettre_css:hover {
+    box-shadow: 5px solid salmon;
+}
+
+
+
+
+/* MISE EN FORME DE LA POP6UP POUR EXPLICATION PROPRIETE CSS */
+.popup {
+    cursor:help;
+    text-decoration:none;
+    color: var(--ecriture);
+    font-family: 'Courier New', Courier, monospace;
+}
+.popup:hover {
+    color: #c78b29;
+    text-decoration:none;
+}
+.separation-propri {
+    margin: 30px;
+    border: 0;
+    border-top: 1px solid var(--ecriture);
+}
+[data-ml-modal] {
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	overflow-x:hidden;
+	overflow-y:auto;
+	-webkit-overflow-scrolling:touch;
+	z-index:999;
+	width:0;
+	height:0;
+	opacity:0;
+}
+#modal-10::-webkit-scrollbar {width: 1rem;}
+#modal-10::-webkit-scrollbar-track {background: transparent;}
+#modal-10::-webkit-scrollbar-thumb {background: green; border-radius: 5rem;}
+[data-ml-modal]:target {
+	width:auto;
+	height:auto;
+	opacity:1;
+	-webkit-transition:  opacity 1s ease;
+	transition: opacity 1s ease;
+}
+[data-ml-modal]:target .modal-overlay {
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	cursor:pointer;
+	background-color: var(--background);
+	z-index:1;
+}
+[data-ml-modal] .modal-dialog {
+	border-radius:6px;
+	position:relative;
+	width: 90%;
+	max-width:660px;
+	max-height:70%;
+	margin:10% auto;
+	overflow-x:hidden;
+	overflow-y:auto;
+	z-index:2;
+}
+[data-ml-modal] .modal-dialog:hover {
+    box-shadow: 0 0 15px 3px var(--ecriture);
+}
+.modal-dialog-lg {max-width:820px !important;}
+
+[data-ml-modal] .modal-dialog > h3 {
+	background-color: var(--background);
+	border-bottom:1px solid #b3b3b3;
+	font-size:24px;
+	font-weight: 400;
+	margin:0;
+	padding:0.8em 56px .8em 27px; 
+    font-family: 'Courier New', Courier, monospace;
+}
+[data-ml-modal] .modal-content {background: var(--background); padding:23px 27px;}
+[data-ml-modal] .modal-close {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    color: green;
+    background-color: var(--background);
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    font-size: 31px;
+    line-height: 37px;
+    text-align: center;
+	-webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+[data-ml-modal] .modal-close:hover {
+    background-color: #c78b29;
+    color: #fff;
+    cursor:pointer;
+}
+[data-ml-modal] p:first-child, [data-ml-modal] p:last-child {margin:0;}
+@media (max-width:767px) {
+	[data-ml-modal] .modal-dialog {margin:20% auto;}
+}
+
+.modal-content .cours0-p-propri, .modal-content .code-p-propri {
+    font-size: 1.2vw;
+}
+.cours3-table .titre-propri {
+    font-size: 1.2vw;
+}
+.cours3-tbody .p1-propri, .cours3-tbody .p2-propri {
+    font-size: 1.2vw;
+}
+.span-css, .span-propri, .span-rens, .span-texte {
+    font-size: 1.2vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+.span-propri {
+    color: #B1865D;
+}
+.span-rens {
+    color: #61AFEF;
+}
+.span-texte {
+    color: #53ABB8;
+}
+.cours3-tbody .td1-propri, .cours3-tbody .td2-propri {
+    padding: 0.5vw;
+}
+@media (min-width:768px) and (max-width: 1400px) {
+    .cours3-table .titre-propri, .modal-content .cours0-p-propri, .modal-content .code-p-propri {
+        font-size: 1.6vw;
+    }
+    .cours3-tbody .p1-propri, .cours3-tbody .p2-propri {
+        font-size: 1.5vw;
+    }
+    .span-css, .span-propri, .span-rens, .span-texte {
+        font-size: 1.5vw;
+    }
+    .cours3-tbody .td1-propri, .cours3-tbody .td2-propri {
+        padding: 0.5vw;
+    }
+}
+@media (max-width: 768px) {
+    .cours3-table .titre-propri, .modal-content .cours0-p-propri, .modal-content .code-p-propri {
+        font-size: 1.6rem;
+    }
+    .cours3-tbody .p1-propri, .cours3-tbody .p2-propri {
+        font-size: 1.5rem;
+    }
+    .span-css, .span-propri, .span-rens, .span-texte {
+        font-size: 1.5rem;
+    }
+    .cours3-tbody .td1-propri, .cours3-tbody .td2-propri {
+        padding: 1vw;
+    }
+}
