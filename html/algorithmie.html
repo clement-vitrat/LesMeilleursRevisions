@@ -1,0 +1,2381 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Les Meilleurs Révisions</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords"> 
+        
+        <!-- Mes pages CSS -->
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/algorithmie.css" />
+
+        <!-- Lien pour icone -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!-- Icons -->
+        <link rel="icon" href="../img/logo.webp">
+
+        <style>
+            .cours3-tbody .classe {
+                font-size: 1.5vw;
+            }
+            @media screen and (max-width: 800px) {
+                .cours3-tbody .classe {
+                    font-size: 2.5vw;
+                }
+            }
+            @media screen and (max-width: 800px) {
+                .cours3-tbody .info {
+                    font-size: 3.5vw;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- CREATION DE MON MENU -->
+        <nav>
+            <div class="theme">
+                <div class="changeTheme" id="changeTheme"></div>
+            </div>
+            <!-- Création du titre du menu -->
+            <div class="logo">
+                <a href="../index.html">LES MEILLEURS <strong>REVISIONS</strong></a>
+            </div>
+            <!-- Création du bouton pour le menu au format smartphone -->
+            <label for="btn" class="icon">
+                <span class="fa fa-bars"></span>
+            </label>
+            <input type="checkbox"  id="btn">
+                
+                <!-- Création du menu avec les sous-menus -->
+                <ul>
+                    <li><a href="../index.html"">Accueil</a></li>
+        
+                    <!-- Création de la partie des Matières -->
+                    <li>
+                        <label for="btn-1" class="show show-active">Matières +</label>
+                        <a href="#" class="active">Matières</a>
+                        <input type="checkbox"  id="btn-1">
+                        <ul>
+                            <li><a href="#" class="active">Algorithmie</a></li>
+                            <li><a href="architecture_reseau.html">Architecture Réseau</a></li>
+                            <li><a href="bases_de_donnees.html">Bases de données</a></li>
+                            <li><a href="html_css_js.html">HTML CSS JS</a></li>
+                            <li><a href="os_administration.html">OS Administration</a></li>
+                            <li><a href="os_funds.html">OS Funds</a></li>
+                        </ul>
+                    </li>
+            
+                    <!-- Création de la partie des Liens -->
+                    <li>
+                        <label for="btn-2" class="show">Liens +</label>
+                        <a href="#">Liens</a>
+                        <input type="checkbox" id="btn-2">
+                        <ul>
+                            <li><a href="liens_algo.html">Algorithmie</a></li>
+                            <li><a href="liens_html.html">HTML - CSS - JS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="a_propos.html">A propos</a></li>
+                    <li><a href="404.html">Contact</a></li>
+                </ul>
+        </nav>
+      
+
+
+        <!-- CREATION DE LA LANDING PAGE (composé d'une présentation)-->
+        <section class="home home-cours" id="home">
+
+            <div class="content">
+                <span data-aos="fade-up" data-aos-delay="150">MATIERES</span>
+                <h3 data-aos="fade-up" data-aos-delay="300">ALGORITHMIE</h3>
+                <p data-aos="fade-up" data-aos-delay="450">Tout ce qui te faut pour devenir le meilleur en algorithmie !</p>
+            </div>
+        
+        </section>
+
+        
+
+        <!-- CREATION DE LA PARTIE DES DIFFERENTS COURS -->
+        <section class="cours" id="cours">
+            <!-- Mise en page du titre de la partie -->
+            <div class="heading">
+                <span>Algorithmie (Python)</span>
+                <h1>Toutes les leçons proposées</h1>
+            </div>
+
+            <!-- Création de plusieurs pages dans une seule -->
+
+            <div class="box-container">
+                <!-- Mise en page de la première partie : Python - Les BASES -->
+                <div class="box" data-aos="fade-up" data-aos-delay="150">
+                    <div class="content">
+                        <h3>LES BASES</h3>
+                        <a href="#un">Apprendre plus <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <!-- Mise en page de la deuxième partie : Python - Les LISTES -->
+                <div class="box" data-aos="fade-up" data-aos-delay="300">
+                    <div class="content">
+                        <h3>LES LISTES</h3>
+                        <a href="#deux">Apprendre plus <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <!-- Mise en page de la troisième partie : Python - Les ENSEMBLES -->
+                <div class="box" data-aos="fade-up" data-aos-delay="450">
+                    <div class="content">
+                        <h3>LES ENSEMBLES</h3>
+                        <a href="#trois">Apprendre plus <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <!-- Mise en page de la quatrième partie : Python - Les TUPLES -->
+                <div class="box" data-aos="fade-up" data-aos-delay="600">
+                    <div class="content">
+                        <h3>LES TUPLES</h3>
+                        <a href="#quatre">Apprendre plus <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <!-- Mise en page de la cinquième partie : Python - Les DICTIONNAIRES -->
+                <div class="box" data-aos="fade-up" data-aos-delay="750">
+                    <div class="content">
+                        <h3>LES DICTIONNAIRES</h3>
+                        <a href="#cinq">Apprendre plus <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <!-- Mise en page de la sixième partie : Python - Les CHAINES DE CARACTERES -->
+                <div class="box" data-aos="fade-up" data-aos-delay="900">
+                    <div class="content">
+                        <h3>LES CHAINES DE CARACTERES</h3>
+                        <a href="#six">Apprendre plus <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <!-- Mise en page de la septième partie : Python - CONVERSIONS DE TYPES -->
+                <div class="box" data-aos="fade-up" data-aos-delay="1150">
+                    <div class="content">
+                        <h3>CONVERSIONS DE TYPES</h3>
+                        <a href="#sept">Apprendre plus <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <!-- Mise en page de la huitième partie : Python - STRUCTURE D'UN PROGRAMME -->
+                <div class="box" data-aos="fade-up" data-aos-delay="1300">
+                    <div class="content">
+                        <h3>STRUCTURE D'UN PROGRAMME</h3>
+                        <a href="#huit">Apprendre plus <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <!-- Mise en page de la neuvième partie : Python - MODULES COMPLEMENTAIRES -->
+                <div class="box" data-aos="fade-up" data-aos-delay="1450">
+                    <div class="content">
+                        <h3>MODULES COMPLEMENTAIRES</h3>
+                        <a href="#neuf">Apprendre plus <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <!-- Mise en page de la dixième partie : Python - Les CLASSES -->
+                <div class="box" data-aos="fade-up" data-aos-delay="1600">
+                    <div class="content">
+                        <h3>LES CLASSES</h3>
+                        <a href="#dix">Apprendre plus <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <!-- Mise en page de la onzième partie : Python - La récursivité -->
+                <div class="box" data-aos="fade-up" data-aos-delay="1750">
+                    <div class="content">
+                        <h3>LA RÉCURSIVITÉ</h3>
+                        <a href="#onze">Apprendre plus <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <!-- Mise en page de la douzième partie : AUTRES -->
+                <div class="box" data-aos="fade-up" data-aos-delay="1750">
+                    <div class="content">
+                        <h3>AUTRES</h3>
+                        <a href="#douze">Apprendre plus <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        
+              
+            <!-- CREATION DE LA 1 PARTIE DU COURS PYTHON : PYTHON - LES BASES -->
+                <div class="page" id="un">
+                    <section class="home home-cours partie-cours" id="home">
+                        <div class="content">
+                            <span data-aos="fade-up" data-aos-delay="150">ALGORITHMIE</span>
+                            <h3 data-aos="fade-up" data-aos-delay="300">PYTHON - LES BASES</h3>
+                            <p data-aos="fade-up" data-aos-delay="450"><a href="#">RETOUR AUX DIFFERENTES LECONS</a></p>
+                        </div>
+                    </section>
+
+                    <section class="lecons" id="lecons">
+                        <div class="heading">
+                            <span>Les bases de Python !</span>
+                            <h1>Quelles sont les bases de Python ?</h1>
+                        </div>
+
+                        <h4 class="cours0-h4">Les principales opérations</h4>    
+                        
+                        <table class="cours3-table" summary="Les principales opérations" cellpadding="0" cellspacing="0">
+                            <tbody class="cours3-tbody">
+                                <tr>
+                                    <td class="td1"><p class="titre">SYNTAXE</p></td>
+                                    <td class="td2"><p class="titre">OPERATION</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">a + b</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Addition</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">a - b</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Soustraction</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">a * b</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Multiplication</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">a / b</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Division (quotient)</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">a ** b</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Puissance (a puissance b)</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">sqrt(a)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Racine carré</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">a // b</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Quotient de la division euclidienne</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">a % b</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Reste de la division euclidienne</p></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <hr class="separation">
+
+                        <h4 class="cours0-h4">Affectation</h4>    
+                        
+                        <table class="cours3-table" summary="Affectation" cellpadding="0" cellspacing="0">
+                            <tbody class="cours3-tbody">
+                                <tr>
+                                    <td class="td1"><p class="titre">SYNTAXE</p></td>
+                                    <td class="td2"><p class="titre">ROLE</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">a = 22</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Affectation des variables</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">b = 5.2</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Affectation des variables</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">a,b = 22,5.2</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Affectation des variables</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">a, b = b, a</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Echange les valeurs des variables a et b</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">a = a - 1</p><p class="p1" style="text-align: left;">a -= 1</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Diminue la variable a de 1</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">a = a + 1</p><p class="p1" style="text-align: left;">a += 1</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Incrémente la variable a de 1</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">a = a * 3</p><p class="p1" style="text-align: left;">a *= 3</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Multiplication (a multiplié par 3)</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">a = a / 2</p><p class="p1" style="text-align: left;">a /= 2</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Division réelle</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">a = a // 5</p><p class="p1" style="text-align: left;">a //= 5</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Division entière</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">a = a % 4</p><p class="p1" style="text-align: left;">a %= 4</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Reste de la division euclidienne (modulo 4)</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">a = a ** 8</p><p class="p1" style="text-align: left;">a **= 8</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Puissance</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">abs(x)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Valeur absolue</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">int(x)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Partie entière de l'écriture décimale</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">x.conjugate()</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Retourne le conjugué du nombre complexe x</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">x.real</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Partie réelle</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">x.imag</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Partie imaginaire</p></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <hr class="separation">
+
+                        <h4 class="cours0-h4">Type et Identifiant</h4>    
+                        
+                        <table class="cours3-table" summary="Type et Indentifiant" cellpadding="0" cellspacing="0">
+                            <tbody class="cours3-tbody">
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">type(a)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Affiche le type (la classe) de la variable ou de l’objet</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">id(a)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Affiche l’identifiant (l’adresse en mémoire)</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">int(x)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Utilisé pour demander un nombre entier</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">float(x)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Utilisé pour demander un nombre réel</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">from math import *</p><p class="p1" style="text-align: left;">eval(x)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Permet d'entrer une valeur réelle sous la forme d'une racine carré ou d'une fraction</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">str(x)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Utilisé pour demander une chaine de caractère</p>
+                                </td>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">complex(a)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Nombres complexes</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">bool</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Booléens (True / False)</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">list</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Listes</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">set</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Ensembles</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">tuple</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">n-uplets</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">function()</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Fonctions</p></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <hr class="separation">
+
+                        <h4 class="cours0-h4">Les booléens</h4>    
+                        
+                        <table class="cours3-table" summary="Les booléens" cellpadding="0" cellspacing="0">
+                            <tbody class="cours3-tbody">
+                                <tr>
+                                    <td class="td1">
+                                        <p class="p1" style="text-align: left;">x & y</p>
+                                        <p class="p1" style="text-align: left;">x and y</p>
+                                    </td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">et</p></td>
+                                    <td class="td1">
+                                        <p class="p1" style="text-align: left;">x | y</p>
+                                        <p class="p1" style="text-align: left;">x or y</p>
+                                    </td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">ou</p></td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td class="td1">
+                                        <p class="p1" style="text-align: left;">x ^ y</p>
+                                    </td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">ou exclusif</p></td>
+                                    <td class="td1"><p class="p1" style="text-align: left;">not x</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">négation de x</p></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <hr class="separation">
+
+                        <h4 class="cours0-h4">Les Tests</h4>    
+                        
+                        <table class="cours3-table" summary="Les Tests" cellpadding="0" cellspacing="0">
+                            <tbody class="cours3-tbody">
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">x == y</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Teste si x est égal à y (double égalité)</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">x != y</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Teste si x est différent de y</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">x < y</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Teste si x est inférieur à y</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">x <= y</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Teste si x est inférieur ou égale à y</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">x > y</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Teste si x est supérieur à y</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">x >= y</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Teste si x est supérieur ou égale à y</p>
+                                </td>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">x in y</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Teste si appartenance (pour les listes, ensembles, chaines de caractères)</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">x is y</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Teste si identité (comparaison des identifiants de x et y)</p></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <hr class="separation">
+
+                        <h4 class="cours0-h4">L'itérateur RANGE</h4>    
+                        
+                        <table class="cours3-table" summary="L'itérateur range" cellpadding="0" cellspacing="0">
+                            <tbody class="cours3-tbody">
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">range(a,b,p)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Retourne les entiers de a à b-1, avec un pas de p</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">range(a,b)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Retourne les entiers de a à b-1, avec la valeur par défaut p=1</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">range(b)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Retourne les entiers de a à b-1, avec la valeur par défaut a=0</p></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <hr class="separation">
+
+                        <h4 class="cours0-h4">Probabilité</h4>    
+                        
+                        <table class="cours3-table" summary="Probabilité" cellpadding="0" cellspacing="0">
+                            <tbody class="cours3-tbody">
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">randint(a,b)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Renvoie un entier au hasard entre les entiers a et b inclus</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">random()</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Renvoie un nombre au hasard dans l'intervalle [0;1[</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">uniform(a,b)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Renvoie un nombre au hasard dans l'intervalle [a;b]</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">choice(L)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Renvoie aléatoirement un élément de la liste, ou de la chaine de caractères, L</p></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <hr class="separation">
+
+                        <h4 class="cours0-h4">Modules</h4>    
+                        
+                        <table classe="cours1-table" summary="Modules" cellpadding="0" cellspacing="0">
+                            <tbody class="cours1-tbody">
+                                <tr>
+                                    <td>
+                                        <p>Importe le module 'math'. On peut ensuite utiliser les fonctions ou les constances sous la forme math.sqrt() ou math.pi ...</p>
+                                        <p id="LeconP">import math</p>
+
+                                    </td>
+                                    <td>
+                                        <p>Importe les fonctions sin et cos du module 'math'. On peut ensuite les utiliser directement sous la forme sin() ou cos().</p>
+                                        <p id="LeconP">from math import sin, cos</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Importe le module 'numpy' en le renommant np. On peut ensuite utiliser les fonctions ou le constantes sous la forme np.linspace()...</p>
+                                        <p id="LeconP">import numpy as np</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </div>
+              
+            <!-- CREATION DE LA 2 PARTIE DU COURS PYTHON : LES LISTES -->
+                <div class="page" id="deux">
+                    <section class="home home-cours partie-cours" id="home">
+                        <div class="content">
+                            <span data-aos="fade-up" data-aos-delay="150">ALGORITHMIE</span>
+                            <h3 data-aos="fade-up" data-aos-delay="300">LES LISTES</h3>
+                            <p data-aos="fade-up" data-aos-delay="450"><a href="#">RETOUR AUX DIFFERENTES LECONS</a></p>
+                        </div>
+                    </section>
+
+                    <section class="lecons" id="lecons">
+                        <div class="heading">
+                            <span>Les listes en Python !</span>
+                            <h1>Qu'est-ce que les listes en Python ?</h1>
+                        </div>
+
+                        <h4 class="cours0-h4">Notation d'une liste</h4>    
+                        
+                        <table class="cours3-table" summary="Notation d'une liste" cellpadding="0" cellspacing="0">
+                            <tbody class="cours3-tbody">
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">L = []</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Création d'une liste vide</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">[1, 2, 3, 4]</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Enumération des objets entre [ ]</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">[[1,2], [1], 1]</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Liste dont les deux premiers termes sont des listes</p></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <hr class="separation">
+
+                        <h4 class="cours0-h4">Opérations et méthodes applicables à une liste</h4>    
+                        
+                        <table class="cours3-table" summary="Opérations et méthodes applicables à une liste" cellpadding="0" cellspacing="0">
+                            <tbody class="cours3-tbody">
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">len(L)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Longueur (nombre d'éléments) de L</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">L1 + L2</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Concaténation des listes</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">n * L</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Pour n entier, concaténation répétée de L avec elle-même</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">L.append(a)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Ajout de l'objet a en fin de la liste</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">L.insert(i,a)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Insertion de l’objet a en position i dans la liste</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">L.remove(a)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Retrait de la première occurrence de a</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">L.pop(i)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Retrait et renvoi de l’élément d’indice i</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">L[0]</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Premier élément de la liste</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">L[-1]</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Dernier élément de la liste</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">del(L[i])</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Suppression de l'attribut d'indice i</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">L.index(a)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Position de la première occurrence de a</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">L.count(a)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Nombre d'occurrence de a dans la liste</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">a in L</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Teste l'appartenance de a à L</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">L.copy()</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Copie simple de L</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">L.reverse()</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Retourne la liste</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">L.sort()</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Trie la liste dans l'ordre croissant</p></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <hr class="separation">
+
+                        <h4 class="cours0-h4">Paramètres de tri</h4>    
+                        
+                        <table class="cours3-table" summary="Paramètres de ti" cellpadding="0" cellspacing="0">
+                            <tbody class="cours3-tbody">
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">L.sort()</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Tri simple</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">L.sort(reverse=True)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Tri inversé</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">L.sort(key = f)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Tri suivant la clé donnée par la fonction f</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">float(x)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Utilisé pour demander un nombre réel</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">from math import *</p><p class="p1" style="text-align: left;">eval(x)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Permet d'entrer une valeur réelle sous la forme d'une racine carré ou d'une fraction</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">str(x)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Utilisé pour demander une chaine de caractère</p>
+                                </td>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">complex(a)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Nombres complexes</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">bool</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Booléens (True / False)</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">list</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Listes</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">set</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Ensembles</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">tuple</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">$n$-uplets</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">function()</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Fonctions</p></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </div>
+                
+            <!-- CREATION DE LA 3 PARTIE DU COURS PYTHON : LES ENSEMBLES -->
+                <div class="page" id="trois">
+                    <section class="home home-cours partie-cours" id="home">
+                        <div class="content">
+                            <span data-aos="fade-up" data-aos-delay="150">ALGORITHMIE</span>
+                            <h3 data-aos="fade-up" data-aos-delay="300">LES ENSEMBLES</h3>
+                            <p data-aos="fade-up" data-aos-delay="450"><a href="#">RETOUR AUX DIFFERENTES LECONS</a></p>
+                        </div>
+                    </section>
+
+                    <section class="lecons" id="lecons">
+                        <div class="heading">
+                            <span>Les ensembles en Python !</span>
+                            <h1>Qu'est-ce que les ensembles en Python ?</h1>
+                        </div>
+
+                        <h4 class="cours0-h4">Notation d'un ensemble</h4>    
+                        
+                        <table class="cours3-table" summary="Notation d'un ensemble" cellpadding="0" cellspacing="0">
+                            <tbody class="cours3-tbody">
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">set()</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Ensemble vide</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">{1, 2, 3, 4}</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Enumération des objets entre { }</p></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <hr class="separation">
+
+                        <h4 class="cours0-h4">Opérations et méthodes applicables à un ensemble</h4>    
+                        
+                        <table class="cours3-table" summary="Opérations et méthodes applicables à un ensemble" cellpadding="0" cellspacing="0">
+                            <tbody class="cours3-tbody">
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">len(S)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Cardinal</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">S.add(a)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Ajoute a à l'ensemble S, si pas déjà présent</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">S.discard(a)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Enlève a de S, si c'en est un élément</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">S.remove(a)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Comme discard, mais retourne une erreur si a n'est pas élément de S</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">S.pop()</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Retourne et enlève un élément au hasard dans S</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">S.intersection(T)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Retourne l'intersection de S et T</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">S.union(T)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Retourne l'union de S et T</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">S.difference(T)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Retourne les éléments de S qui ne sont pas dans T</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">S.isdisjoint(T)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Retourne True ssi S et T sont disjoints</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">S.issubset(T)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Retourne True ssi S est inclus dans T</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">a in S</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Teste l'appartenance de a à S</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">S.copy()</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Copie simple de S</p></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+
+                </div>
+              
+            <!-- CREATION DE LA 4 PARTIE DU COURS PYTHON : LES TUPLES -->
+                <div class="page" id="quatre">
+                    <section class="home home-cours partie-cours" id="home">
+                        <div class="content">
+                            <span data-aos="fade-up" data-aos-delay="150">ALGORITHMIE</span>
+                            <h3 data-aos="fade-up" data-aos-delay="300">LES TUPLES</h3>
+                            <p data-aos="fade-up" data-aos-delay="450"><a href="#">RETOUR AUX DIFFERENTES LECONS</a></p>
+                        </div>
+                    </section>
+
+                    <section class="lecons" id="lecons">
+                        <div class="heading">
+                            <span>Les tuples en Python !</span>
+                            <h1>Qu'est-ce que les tuples en Python ?</h1>
+                        </div>
+
+                        <h4 class="cours0-h4">Notation d'un tuple</h4>    
+                        
+                        <table class="cours3-table" summary="Notation d'un tuple" cellpadding="0" cellspacing="0">
+                            <tbody class="cours3-tbody">
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">U = ()</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Création d'un tuple vide</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">(1, 2, 3, 4)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Enumération des objets entre ( )</p></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <hr class="separation">
+
+                        <h4 class="cours0-h4">Opérations et méthodes applicables à un tuple</h4>    
+                        
+                        <table class="cours3-table" summary="Opérations et méthodes applicables à un tuple" cellpadding="0" cellspacing="0">
+                            <tbody class="cours3-tbody">
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">U[0]</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Premier élément du tuple</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">U[-1]</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Dernier élément du tuple</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">len(U)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Longueur (nombre de coordonnées) de U</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">U + V</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Retourne la concaténation</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">n * U</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Concaténation répétée n fois</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">U * n</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Concaténation répétée n fois</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">U.count(a)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Retourne le nombre d'occurrence de a</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">U.index(a)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Retourne le premier indice de a, ou une erreur si a n'est pas un attribut</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">a in U</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Teste l'appartenance de a à U</p></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+
+                </div>
+                
+            <!-- CREATION DE LA 5 PARTIE DU COURS PYTHON : LES DICTIONNAIRES -->
+                <div class="page" id="cinq">
+                    <section class="home home-cours partie-cours" id="home">
+                        <div class="content">
+                            <span data-aos="fade-up" data-aos-delay="150">ALGORITHMIE</span>
+                            <h3 data-aos="fade-up" data-aos-delay="300">LES DICTIONNAIRES</h3>
+                            <p data-aos="fade-up" data-aos-delay="450"><a href="#">RETOUR AUX DIFFERENTES LECONS</a></p>
+                        </div>
+                    </section>
+
+                    <section class="lecons" id="lecons">
+                        <div class="heading">
+                            <span>Les dictionnaires en Python !</span>
+                            <h1>Qu'est-ce que les dictionnaires en Python ?</h1>
+                        </div>
+
+                        <h4 class="cours0-h4">Notation d'un dictionnaire</h4>    
+                        
+                        <table class="cours3-table" summary="Notation d'un dictionnaire" cellpadding="0" cellspacing="0">
+                            <tbody class="cours3-tbody">
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">d = {}</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Création d'un dictionnaire vide</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">d = {key1:val1, key2:val2}</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Création d'un dictionnaire à 2 entrée accessibles par les indices key1 et key2</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">d[key1]</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Accès à val1, associé à l'indice key1</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">del(d[key2])</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Suppression de l'entrée associée à l'indice key2</p></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <hr class="separation">
+
+                        <h4 class="cours0-h4">Opérations et méthodes applicables à un dictionnaire</h4>    
+                        
+                        <table class="cours3-table" summary="Opérations et méthodes applicables à un dictionnaire" cellpadding="0" cellspacing="0">
+                            <tbody class="cours3-tbody">
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">d.keys()</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Donne la liste des clés sous forme d’un itérable</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">d.values()</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Donne la liste des valeurs sous forme d’un itérable</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">d.items()</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Donne la liste des objets (entrées) sous forme d’un itérable. Les éléments de cet itérable sont des couples (key,val).</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">d.pop(key)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Ressort l’objet associé à la clé key et supprime l'entrée correspondante dans le dictionnaire</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">d.popitem()</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Ressort un couple (key,val) du dictionnaire et le supprime</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">d.clear()</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Efface tout le contenu du dictionnaire</p></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <hr class="separation">
+
+                        <h4 class="cours0-h4">Exemple : Création d'un dictionnaire</h4>    
+                        
+                        <table class="cours3-table" summary="Exemple : Création d'un dictionnaire" cellpadding="0" cellspacing="0">
+                            <tbody class="cours3-tbody">
+                                <tr>
+                                    <td class="td1">
+                                        <p class="p1" style="text-align: left;">d = {}</p>
+                                        <p class="p1" style="text-align: left;">d['a'] = (2,3,4)</p>
+                                        <p class="p1" style="text-align: left;">d[5] = 'cinq'</p>
+                                        <p class="p1" style="text-align: left;">d['un'] = 1</p>
+                                    </td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Création d'un dictionnaire par ajouts successifs</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">>>> d</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Affichage du dictionnaire</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">>>> d[5]</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Affichage d'une valeur du dictionnaire, associée à une certaine clé</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">>>> d[2]</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Accès à une clé non définie</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">>>> d['a'] = 23</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Modification de la valeur associée à une clé</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">>>> del d['un']</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Suppression d'un élément</p></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+
+                </div>
+                
+            <!-- CREATION DE LA 6 PARTIE DU COURS PYTHON : LES CHAINES DE CARACTERES -->
+                <div class="page" id="six">
+                    <section class="home home-cours partie-cours" id="home">
+                        <div class="content">
+                            <span data-aos="fade-up" data-aos-delay="150">ALGORITHMIE</span>
+                            <h3 data-aos="fade-up" data-aos-delay="300">LES CHAINES DE CARACTERES</h3>
+                            <p data-aos="fade-up" data-aos-delay="450"><a href="#">RETOUR AUX DIFFERENTES LECONS</a></p>
+                        </div>
+                    </section>
+
+                    <section class="lecons" id="lecons">
+                        <div class="heading">
+                            <span>Les chaines de caractères en Python !</span>
+                            <h1>Qu'est-ce que les chaines de caractères en Python ?</h1>
+                        </div>
+
+                        <h4 class="cours0-h4">Notation d'une chaine de caractères</h4>    
+                        
+                        <table class="cours3-table" summary="Notation d'une chaine de caractères" cellpadding="0" cellspacing="0">
+                            <tbody class="cours3-tbody">
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">'abcd'</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Enumération des caractères successifs entre ' '</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">"abcd"</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Enumération des caractères successifs entre " "</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">"""abcd"""</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Enumération des caractères successifs entre """ """ (raw string)</p></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <hr class="separation">
+
+                        <h4 class="cours0-h4">Accès aux éléments d'une chaine</h4>    
+                        
+                        <table class="cours3-table" summary="Accès aux éléments d'une chaine" cellpadding="0" cellspacing="0">
+                            <tbody class="cours3-tbody">
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">ch = 'abcd'</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Création d'une chaine de caractères</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">>>> ch[2]</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Retourne le 2ème élément de la chaine, ici 'c'</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">>>> ch[-1]</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Retourne le dernier élément de la chaine, ici 'd'</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">ch = 'azertyuiopqs'</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Création d'une chaine de caractères</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">>>> ch[3:8]</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Retourne du 3ème au 8ème élément, ici 'rtyuio'</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">>>> ch[::2]</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Retourne 1 élément sur 2, ici 'aetuoq'</p></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <hr class="separation">
+
+                        <h4 class="cours0-h4">Opérations et méthodes applicables à une chaine</h4>    
+                        
+                        <table class="cours3-table" summary="Opérations et méthodes applicables à une chaine" cellpadding="0" cellspacing="0">
+                            <tbody class="cours3-tbody">
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">len(c)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Longueur (nombre de caractères)</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">print(c)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Affichage à l'écran de la chaine c</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">c + d</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Concaténation des chaines</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">n * c</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Concaténation répétée n fois</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">c.join(li)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Concaténation des chaines de la liste li</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">c.split(sep)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Scinde c en une liste de chaines</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">c.center(n)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Centre n dans une chaine de longueur n</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">c.format(x,y,...)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Insertion des nombres x, y... aux endroits délimités par des { } dans une chaine</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">d in c</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Teste si d est sous-chaine de c</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">c.count(d)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Nombre d’occurrences ne se recouvrant pas de la chaîne</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">c.find(d)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Indice de la première occurrence de d (renvoie -1 si pas d'occurrence)</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">c.index(d)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Indice de la première occurrence de d (erreur si pas d'occurrence)</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">c.rfind(d)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">De même que find pour la dernière occurrence</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">c.rindex(d)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">De même que index pour la dernière occurrence</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">c.replace(d,e)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Remplace toutes les sous-chaînes d par e</p></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+
+                </div>
+                
+            <!-- CREATION DE LA 7 PARTIE DU COURS PYTHON : CONVERSIONS DE TYPES -->
+                <div class="page" id="sept">
+                    <section class="home home-cours partie-cours" id="home">
+                        <div class="content">
+                            <span data-aos="fade-up" data-aos-delay="150">ALGORITHMIE</span>
+                            <h3 data-aos="fade-up" data-aos-delay="300">CONVERSIONS DE TYPES</h3>
+                            <p data-aos="fade-up" data-aos-delay="450"><a href="#">RETOUR AUX DIFFERENTES LECONS</a></p>
+                        </div>
+                    </section>
+
+                    <section class="lecons" id="lecons">
+                        <div class="heading">
+                            <span>Les conversions de types en Python !</span>
+                            <h1>Qu'est-ce que les conversions de types en Python ?</h1>
+                        </div>
+
+                        <h4 class="cours0-h4">Conversions de type</h4>    
+                        
+                        <table class="cours3-table" summary="Conversions de type" cellpadding="0" cellspacing="0">
+                            <tbody class="cours3-tbody">
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">float(a)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Convertit l’entier a en réel flottant</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">complex(a)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Convertit l’entier ou le flottant a en complexe</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">str(x)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Convertit l’objet x de type quelconque en une chaine de caractères</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">list(x)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Convertit un itérable x (set, tuple, str, range) en objet de type liste</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">set(x)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Convertit un itérable x en set</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">tuple(x)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Convertit un itérable x en tuple</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">eval(x)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Convertit la chaîne x en un objet adéquat, si possible</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">float(x)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Convertit la chaîne x en flottant si possible</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="td1"><p class="p1" style="text-align: left;">int(x)</p></td>
+                                    <td class="td2"><p class="p2" style="line-height: normal;">Convertit la chaîne x en entier si possible</p></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+
+                </div>
+                
+            <!-- CREATION DE LA 8 PARTIE DU COURS PYTHON : STRUCTURE D'UN PROGRAMME -->
+                <div class="page" id="huit">
+                    <section class="home home-cours partie-cours" id="home">
+                        <div class="content">
+                            <span data-aos="fade-up" data-aos-delay="150">ALGORITHMIE</span>
+                            <h3 data-aos="fade-up" data-aos-delay="300">STRUCTURE D'UN PROGRAMME</h3>
+                            <p data-aos="fade-up" data-aos-delay="450"><a href="#">RETOUR AUX DIFFERENTES LECONS</a></p>
+                        </div>
+                    </section>
+
+                    <section class="lecons" id="lecons">
+                        <div class="heading">
+                            <span>Les structure d'un programme Python !</span>
+                            <h1>Quelles sont les structures d'un programme Python ?</h1>
+                        </div>
+
+                        <h4 class="cours0-h4">Notion de programme</h4>    
+                        
+                        <table classe="cours1-table" summary="Notion de programme" cellpadding="0" cellspacing="0">
+                            <tbody class="cours1-tbody">
+                                <tr>
+                                    <td>
+                                        <p>Importance des indentations</p>
+                                        <p id="LeconP">x = y = 1</p>
+                                        <p id="LeconP"><span>for</span> i in <span>range</span>(5)</p>
+                                            <p id="LeconP-tab">x += 1</p>
+                                            <p id="LeconP-tab">y += 1</p>
+                                        <p id="LeconP"><span>print</span>(x,y)</p>
+                                    </td>
+                                    <td>
+                                        <p>Saisie de texte :</p>
+                                        <p id="LeconP">>>> x = <span>input</span>('Que voulez-vous me dire? ')</p>
+                                        <p id="LeconP">Que voulez-vous me dire? ZUT!</p>
+                                        <p id="LeconP">>>> x</p>
+                                        <p id="LeconP">'ZUT!'</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Saisie de valeur :</p>
+                                        <p id="LeconP">>>> x = <span>input</span>('Entrez une valeur : ')</p>
+                                        <p id="LeconP">Entrez une valeur : 2</p>
+                                        <p id="LeconP">>>> x</p>
+                                        <p id="LeconP">'2'</p>
+                                    </td>
+                                    <td>
+                                        <p>Saisie de valeur :</p>
+                                        <p id="LeconP">>>> x = <span>eval</span>(<span>input</span>('Entrez une valeur : '))</p>
+                                        <p id="LeconP">Entrez une valeur : 2</p>
+                                        <p id="LeconP">>>> x</p>
+                                        <p id="LeconP">2</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <hr class="separation">
+
+                        <h4 class="cours0-h4">Les fonctions</h4>    
+                        
+                        <table classe="cours1-table" summary="Les fonctions" cellpadding="0" cellspacing="0">
+                            <tbody class="cours1-tbody">
+                                <tr>
+                                    <td>
+                                        <p>Syntaxe générale d'une fonction :</p>
+                                        <p id="LeconP"><span>def</span> nom_de_la_fonction(x,y) :</p>
+                                            <p id="LeconP-tab">"""Description"""</p>
+                                            <p id="LeconP-tab">instructions</p>
+                                            <p id="LeconP-tab"><span>return</span> résultat</p>
+                                        <p>Pour exécuter une fonction, il suffit de l'appeller dans le shell ou dans le code de la manière suivante :</p>
+                                        <p id="LeconP">nom_de_la_fonction(5,6)</p>
+                                    </td>
+                                    <td>
+                                        <p>Exemple de fonction</p>
+                                        <p id="LeconP"><span>def</span> addition(x,y) :</p>
+                                            <p id="LeconP-tab">"""Action : Fait une addition / Return : Le résultat de l'addition"""</p>
+                                            <p id="LeconP-tab">a = x + y</p>
+                                            <p id="LeconP-tab"><span>return</span> a</p>
+                                        <p id="LeconP">addition(5,6)</p>
+                                        <p id="LeconP">11</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <hr class="separation">
+
+                        <h4 class="cours0-h4">Les structures conditionnelles</h4>    
+                        
+                        <table classe="cours1-table" summary="Les structures conditionnelles" cellpadding="0" cellspacing="0">
+                            <tbody class="cours1-tbody">
+                                <tr>
+                                    <td>
+                                        <p>Une seule structure à connaitre:</p>
+                                        <p id="LeconP"><span>if</span> condition1 :</p>
+                                            <p id="LeconP-tab">instruction(s)1</p>
+                                        <p id="LeconP"><span>elif</span> condition2 :</p>
+                                            <p id="LeconP-tab">instruction(s)2</p>
+                                        <p id="LeconP"><span>elif</span> condition3 :</p>
+                                            <p id="LeconP-tab">instruction(s)3</p>
+                                        <p id="LeconP">...</p>
+                                        <p id="LeconP"><span>else</span> :</p>
+                                            <p id="LeconP-tab">instruction(s)4</p>
+                                    </td>
+                                    <td>
+                                        <p>Les clauses elif (il peut y en avoir autant qu’on veut), ainsi que else sont facultatives.</p>
+                                        <p>La structure est à comprendre comme suit :</p>
+                                            <p>• Les intructions1 sont effectuées uniquement si le condition1 est positif</p>
+                                            <p>• Les instructions instructions2 sont effectuées uniquement si le condition1 est négatif et le condition2 positif</p>
+                                            <p>• Les instructions instructions3 sont effectuées uniquement si le condition1 et le condition2 sont négalifs et le condition3 est positif</p>
+                                            <p>• ...</p>
+                                            <p>• Les instructions instructions4 sont effectuées dans tous les autres cas.</p>
+                                        <p><strong style="color: red;">ATTENTION</strong> : N'oubliez pas les deux-points, et faites attention à l'indentation</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <hr class="separation">
+
+                        <h4 class="cours0-h4">La gestion des exceptions</h4>    
+                        
+                        <table classe="cours1-table" summary="La gestion des exceptions" cellpadding="0" cellspacing="0">
+                            <tbody class="cours1-tbody">
+                                <tr>
+                                    <td>
+                                        <p>Une seule structure à connaitre:</p>
+                                        <p id="LeconP"><span>try</span> :</p>
+                                            <p id="LeconP-tab">instructions1</p>
+                                        <p id="LeconP"><span>except</span> :</p>
+                                            <p id="LeconP-tab">instructions2</p>
+                                        <p id="LeconP"><span>else</span> :</p>
+                                            <p id="LeconP-tab">instructions3</p>
+                                    </td>
+                                    <td>
+                                        <p>L’ordinateur essaie d’effectuer la série d’instructions1.</p>
+                                        <p>• S’il survient une erreur d’exécution, il effectue les instructions2 et saute les instructions3.</p>
+                                        <p>• Sinon, il saute les instructions2 et exécute les instructions3.</p>
+                                        <p>La clause except est obligatoire, la clause else est facultative. Si on n’a rien a faire dans la clause except, on peut utiliser l’instruction vide pass.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+
+                </div>
+                
+            <!-- CREATION DE LA 9 PARTIE DU COURS PYTHON : MODULES COMPLEMENTAIRES -->
+                <div class="page" id="neuf">
+                    <section class="home home-cours partie-cours" id="home">
+                        <div class="content">
+                            <span data-aos="fade-up" data-aos-delay="150">ALGORITHMIE</span>
+                            <h3 data-aos="fade-up" data-aos-delay="300">MODULES COMPLEMENTAIRES</h3>
+                            <p data-aos="fade-up" data-aos-delay="450"><a href="#">RETOUR AUX DIFFERENTES LECONS</a></p>
+                        </div>
+                    </section>
+
+                    <section class="lecons" id="lecons">
+                        <div class="heading">
+                            <span>Les modules en Python !</span>
+                            <h1>Qu'est-ce que les modules en Python ?</h1>
+                        </div>
+
+                        <h4 class="cours0-h4">Utilisation d'un module</h4>    
+                        
+                        <table class="cours2-table" summary="Tableau des différents type de jointures" cellpadding="0" cellspacing="0">
+                            <tbody class="cours2-tbody">
+                                <tr>
+                                    <td>
+                                        <h2>Import simple du module</h2>
+                                        <p class="requete1"><span class="requete-span">import mod</span></p>
+                                        <p class="explication">Cette instruction permet de faire savoir à l'ordinateur qu'on utilise le module 'mod'. On peut alors utiliser les fonctions de ce module en les faisant précéder du préfixe 'mod' (nom du module).</p>
+                                        <p class="requete2"><span class="requete-span">mod.fonct()</span></p>
+                                    </td>
+                                    <td>
+                                        <h2>Import simple du module</h2>
+                                        <p class="explication">On peut, au moment de l’import du module, créer un alias, qui permettra d’appeler les fonctions de ce module en donnant comme préfixe l’alias au lieu du nom complet :</p>
+                                        <p class="requete1"><span class="requete-span">import mod as al</span></p>
+                                        <p class="requete2"><span class="requete-span">al.fonct()</span></p>
+                                        <p class="requete-esp"></p>
+                                        <p class="explication">Un alias d'usage très courant est :</p>
+                                        <p class="requete2"><span class="requete-span">import numpy as np</span></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h2>Import d'une fonction d'un module</h2>
+                                        <p class="requete1"><span class="requete-span">from mod import fonct</span></p>
+                                        <p class="explication">Cette instruction permet d'importer la définition de la fonction 'fonct', qui peut alors être utilisée sans préfixe : fonct()</p>
+                                    </td>
+                                    <td>
+                                        <h2>Import de toutes les fonctions d'un module</h2>
+                                        <p class="requete1"><span class="requete-span">from mod import *</span></p>
+                                        <p class="explication">Cette instruction permet d'importer la définition de toutes les fonction du module.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <hr class="separation">
+
+                        <h4 class="cours0-h4">Le module 'math'</h4>    
+                        <h5 class="cours0-h5">from math import *</h5>
+                        
+                        <h6 class="cours0-h6">Exponentielle et logarithme</h6>
+                            <table class="cours3-table" summary="Le module 'math'" cellpadding="0" cellspacing="0">
+                                <tbody class="cours3-tbody">
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">e</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Constante e, base de l'exponentielle</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">exp(x)</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Exponentielle de x</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">log(x)</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Logarithme népérien</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">log10(x)</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Logarithme en base 10</p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        <h6 class="cours0-h6">Exponentielle et logarithme</h6>
+                            <table class="cours3-table" summary="Le module 'math'" cellpadding="0" cellspacing="0">
+                                <tbody class="cours3-tbody">
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">pi</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Le nombre pi</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">cos(x)</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Cosinux</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">sin(x)</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Sinus</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">tan(x)</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Tangente</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">acos(x)</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Arscos</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">asin(x)</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Arcsin</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">atan(x)</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Arctan</p></td>
+                                    </tr> 
+                                </tbody>
+                            </table>
+                        <h6 class="cours0-h6">Fonctions hyperboliques</h6>
+                            <table class="cours3-table" summary="Le module 'math'" cellpadding="0" cellspacing="0">
+                                <tbody class="cours3-tbody">
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">cosh(x)</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Cosinus hyperbolique</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">sinh(x)</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Sinus hyperbolique</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">tanh(x)</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Tangente hyperbolique</p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        <h6 class="cours0-h6">Parties entières</h6>
+                            <table class="cours3-table" summary="Le module 'math'" cellpadding="0" cellspacing="0">
+                                <tbody class="cours3-tbody">
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">floor(x)</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Partie entière</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">ceil(x)</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Partie entière par excès</p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        <h6 class="cours0-h6">Autres fonctions</h6>
+                            <table class="cours3-table" summary="Le module 'math'" cellpadding="0" cellspacing="0">
+                                <tbody class="cours3-tbody">
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">sqrt(x)</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Racine carrée</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">factorial(x)</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Factorielle (pour x entier)</p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        <hr class="separation">
+
+                        <h4 class="cours0-h4">Le module 'numpy' (calcul numérique)</h4>    
+                        
+                        <h6 class="cours0-h6">La structure array : tableau multidimentionnel</h6>
+                            <table class="cours3-table" summary="Le module 'numpy'" cellpadding="0" cellspacing="0">
+                                <tbody class="cours3-tbody">
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">array(liste)</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Convertisseur : Transforme une liste en tableau en imbriquant des listes dans des listes, on peut obtenir des tableaux multidimentionnels</p></td>
+                                    </tr> 
+                                </tbody>
+                            </table>
+                        <h6 class="cours0-h6">Exemples</h6>
+                            <table class="cours3-table" summary="Le module 'numpy'" cellpadding="0" cellspacing="0">
+                                <tbody class="cours3-tbody">
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">np.array([1,2,3])</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Tableau à 3 entrées (matrice ligne)</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">np.array([[1,2],[3,4]])</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Matrice 2x2 de première ligne (1,2) et seconde ligne (3,4)</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">np.array([[1],[2][3]])</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Matrice colonne</p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        <h6 class="cours0-h6">Fonctions de structure sur les array</h6>
+                            <table class="cours3-table" summary="Le module 'numpy'" cellpadding="0" cellspacing="0">
+                                <tbody class="cours3-tbody">
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">np.shape(A)</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Format du tableau (nb lignes, nb colonnes ...) sous forme d'un tuple</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">np.rank(A)</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Profondeur d'imbrication (dimension spatiale)</p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        <h6 class="cours0-h6">Création de tableaux particuliers</h6>
+                            <table class="cours3-table" summary="Le module 'numpy'" cellpadding="0" cellspacing="0">
+                                <tbody class="cours3-tbody">
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">np.ones(n)</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Crée une matrice ligne de taille n constituée de 1</p></td>
+                                    </tr> 
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">np.ones((n1,n2))</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Matrice de taille n1 x n2, constituée de 1 (se généralise à des tuples)</p></td>
+                                    </tr> 
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">np.zeros(n)</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Crée une matrice ligne de taille n constituée de 0</p></td>
+                                    </tr> 
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">np.zeros((n1,n2))</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Matrice de taille n1 x n2, constituée de 0 (se généralise à des tuples)</p></td>
+                                    </tr> 
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">np.eye(n)</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Matrice identité d’ordre n (des 1 sur la diagonale)</p></td>
+                                    </tr> 
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">np.diag(d0,...,dn)</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Matrice diagonale de coefficients diagonaux d1,...,d_n</p></td>
+                                    </tr> 
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">np.linspace(a,b,n)</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Matrice ligne constituée de n valeurs régulièrement réparties (entre $a$ et $b$)</p></td>
+                                    </tr> 
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">np.arange(a,b,p)</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Matrice ligne des valeurs de a à b en progressant de pas p</p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="cours3-table" summary="Le module 'numpy'" cellpadding="0" cellspacing="0">
+                                <tbody class="cours3-tbody">
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">np.fromfunction(f,(n,))</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Matrice ligne remplie des valeurs f(k) pour k de 0 à n-1</p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        <h6 class="cours0-h6">Opérations matricielles</h6>
+                            <table class="cours3-table" summary="Le module 'numpy'" cellpadding="0" cellspacing="0">
+                                <tbody class="cours3-tbody">
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">A + B</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Somme de deux matrices</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">a * M</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Multiplication par un scalaire</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">A * B</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Produit coefficient par coefficient (produit de Schur)</p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="cours3-table" summary="Le module 'numpy'" cellpadding="0" cellspacing="0">
+                                <tbody class="cours3-tbody">
+                                    <tr>
+                                        <td class="td1">
+                                            <p class="p1" style="text-align: left;">np.dot(A,B)</p>
+                                            <p class="p1" style="text-align: left;">A.dot(B)</p>
+                                        </td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Produit matriciel</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">np.linalg.det(A)</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Déterminant</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">np.trace(A)</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Trace</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">np.transpose(A)</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Transposée</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">np.power(A,n)</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">A puisssance n</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">np.linalg.inv(A)</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Inverse de A</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">np.linalg.eigvals(A)</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Valeurs propres de A</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">np.linalg.eig(A)</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Valeurs propres et base de valeurs propres</p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        <h6 class="cours0-h6">Résolution de systèmes de Cramer</h6>
+                            <table class="cours3-table" summary="Le module 'numpy'" cellpadding="0" cellspacing="0">
+                                <tbody class="cours3-tbody">
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">np.linalg.solve(A,b)</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Donne l’unique solution du système de Cramer Ax=b</p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        <h6 class="cours0-h6">Sous-module numpy.random</h6>
+                            <table class="cours3-table" summary="Le module 'numpy'" cellpadding="0" cellspacing="0">
+                                <tbody class="cours3-tbody">
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">npr.randint(a)</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Génère aléatoirement un entier de 0 à a-1 inclus, de façon uniforme</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">npr.randint(a,b)</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Génère aléatoirement un entier de a à b-1 inclus, de façon uniforme</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">npr.random(a,b,n)</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Génère un tableau 1 x n d’entiers aléatoirement choisis uniformément entre a et b-1</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">npr.random()</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Génère aléatoirement un réel de [0,1[ de façon uniforme</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">npr.sample(n)</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Génère un np.array 1 ligne n colonnes rempli aléatoirement par des réels de [0,1[ choisis uniformément</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">npr.sample(tuple)</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">De même pour un tableau multidimentionnel de taille définie par le tuple</p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        
+                        <hr class="separation">
+
+                        <h4 class="cours0-h4">Le module 'scipy' (calcul scientifique)</h4>    
+                        
+                        <h6 class="cours0-h6">Calcul numérique</h6>
+                            <table classe="cours1-table" summary="Le module 'scipy'" cellpadding="0" cellspacing="0">
+                                <tbody class="cours1-tbody">
+                                    <tr>
+                                        <td>
+                                            <p>Intégrale de f de a à b</p>
+                                            <p id="LeconP">scipy.integrate.quad(f,a,b)</p>
+
+                                        </td>
+                                        <td>
+                                            <p>Résolution d’équation par la méthode de Newton (initailisée au point a, g doit être égal à f')</p>
+                                            <p id="LeconP">scipy.optimize.newton(f,a,g)</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>De même par la méthode de la sécante</p>
+                                            <p id="LeconP">scipy.optimize.newton(f,a)</p>
+                                        </td>
+                                        <td>
+                                            <p>Résolution de l’ED y’=f(y,t) (y0 est la valeur initial (t minimal),  T est un tableau des temps auquels, calculer les valeurs de y)</p>
+                                            <p id="LeconP">scipy.integrate.odeint(f,y0,T)</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        
+                        <hr class="separation">
+
+                        <h4 class="cours0-h4">Le module 'colorama' (couleurs)</h4>    
+                            <h6 class="cours0-h6">On peut utiliser les diverses fonctionnalités:</h6>
+                                <p class="cours0-p" style="padding-left: 10px; padding-bottom: 5px;">• <strong>Fore</strong> : permet de changer la couleur de l'écriture,</p>
+                                <p class="cours0-p" style="padding-left: 10px; padding-bottom: 5px;">• <strong>Back</strong> : permet de changer la couleur de l'arrière plan,</p>
+                                <p class="cours0-p" style="padding-left: 10px; padding-bottom: 5px;">• <strong>Style</strong> : permet de changer la brillance de la police,</p>
+                                <p class="cours0-p" style="padding-left: 10px; padding-bottom: 5px;">• <strong>Style.RESET_ALL</strong> : permet de repasser en couleur d'origine.</p>
+                            <h6 class="cours0-h6">Voici la liste des attributs associés:</h6>
+                                <p class="cours0-p" style="padding-left: 10px; padding-bottom: 5px;">• <strong>Fore</strong> : BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET</p>
+                                <p class="cours0-p" style="padding-left: 10px; padding-bottom: 5px;">• <strong>Back</strong> : BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET</p>
+                                <p class="cours0-p" style="padding-left: 10px; padding-bottom: 5px;">• <strong>Style</strong> : DIM, NORMAL, BRIGHT, RESET_ALL</p>
+                            <h6 class="cours0-h6">Démonstrations:</h6>
+                                <img src="../img/module_colorama.png" style="width: 100%;" alt="">
+    
+                        <hr class="separation">
+
+                        <h4 class="cours0-h4">Le module 'matplotlib' (tracé des courbes)</h4>    
+
+                        <h6 class="cours0-h6">Fonctions principales de matplotlib</h6>
+                            <table classe="cours1-table" summary="Le module 'matplotlib'" cellpadding="0" cellspacing="0">
+                                <tbody class="cours1-tbody">
+                                    <tr>
+                                        <td>
+                                            <p>Supprimer les tracés précédents</p>
+                                            <p id="LeconP">plt.clf()</p>
+
+                                        </td>
+                                        <td>
+                                            <p>Tracer la courbe représentant y en fonction de x avec le style styleDuGraphe, l’épaisseur linewidth, le nom de la courbe à afficher dans la légende étant label</p>
+                                            <p id="LeconP">plt.plot(x, y, styleDuGraphe,</p>
+                                                <p id="LeconP-tab">linewidth=1, label = 'y = f(x)’)</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>Ajouter des libellés sur les axes</p>
+                                            <p id="LeconP">plt.xlabel('x - axe des abscisses')</p>
+                                            <p id="LeconP">plt.ylabel('y - axe des ordonnées')</p>
+                                        </td>
+                                        <td>
+                                            <p>Définir des valeurs minimales et maximales pour les abscisses (-5.5 et 5.5) et les ordonnées (0 et 10)</p>
+                                            <p id="LeconP">plt.axis([-5.5,5.5,0,10])</p>
+                                                <p id="LeconP-tab">ou</p>
+                                            <p id="LeconP">plt.xlim(-5.5,5.5)</p>
+                                            <p id="LeconP">plt.ylim(0,10)</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>Ajouter un titre au graphique</p>
+                                            <p id="LeconP">plt.title('Représentation de y en fonction de x')</p>
+
+                                        </td>
+                                        <td>
+                                            <p>NB : en ajoutant un r devant la chaîne de caractères, on peut afficher des formules mathématiques à l’aide de la syntaxe LATEX</p>
+                                            <p id="LeconP">plt.title(r"$\Delta E = \frac{h \times c} {\lambda}$ (J)")</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>Ajouter une grille au graphique</p>
+                                            <p id="LeconP">plt.grid()</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>Ajouter du texte dans le graphe à la position souhaitée</p>
+                                            <p id="LeconP">plt.text(2, 3.5, 'Point de fonctionnement')</p>
+                                        </td>
+                                        <td>
+                                            <p>Ajouter une annotation à la position souhaitée xytext et trace une flèche jusqu’au point xy</p>
+                                            <p id="LeconP">plt.annotate('Maximum', xy=(1.5, 1),</p>
+                                                <p id="LeconP-tab">xytext=(2,1.5),</p>
+                                                <p id="LeconP-tab">arrowprops=dict(facecolor='black',</p>
+                                                <p id="LeconP-tab">arrowstyle='->'))</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>Tracer un vecteur au point d’application (xVecteur, yVecteur), vecteurX composante suivant x, vecteurY composante suivant y</p>
+                                            <p id="LeconP">vecteur = plt.quiver(xVecteur, yVecteur,</p>
+                                                <p id="LeconP-tab">vecteurX, vecteurY,</p>
+                                                <p id="LeconP-tab">scale=echelleVecteur,</p>
+                                                <p id="LeconP-tab">color='r',angles='xy', units='xy')</p>
+                                        </td>
+                                        <td>
+                                            <p>Trace l’échelle correspondant au vecteur vecteur, en position (0.1,0.1) sur le graphique et valeur de l’échelle.</p>
+                                            <p id="LeconP">plt.quiverkey(vecteur, 0.1, 0.1, 2,</p>
+                                                <p id="LeconP-tab">label='échelle 2 m/s',</p>
+                                                <p id="LeconP-tab">coordinates='data')</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>Ajouter une légende avec le nom des courbes</p>
+                                            <p id="LeconP">plt.legend()</p>
+
+                                        </td>
+                                        <td>
+                                            <p>Afficher le graphe</p>
+                                            <p id="LeconP">plt.show()</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        <h6 class="cours0-h6">Enjoliver les graphes</h6>
+                            <p class="lecon-sous-titre" style="text-align: left;">plt.plot(x, y, styleDuGraphe) où styleDuGraphe est une chaîne de caractères qui regroupe la couleur de la courbe, le marqueur de point et le style de liaison entre les points.</p>
+                            <table class="cours3-table" summary="Le module 'matplotlib'" cellpadding="0" cellspacing="0">
+                                <tbody class="cours3-tbody">
+                                    <tr>
+                                        <td class="td1"><p class="titre">CHAINE</p></td>
+                                        <td class="td2"><p class="titre">MARQUEUR DE POINT</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: right;">.</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Point</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: right;">,</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Pixel</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: right;">○</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Rond (alt+9)</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: right;">v</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Triangle pointe en bas</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: right;">^</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Triangle pointe en haut</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: right;"><</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Triangle pointe à gauche</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: right;">></p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Triangle pointe à droite</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: right;">1</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Croix à 3 brancges vers le bas</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: right;">2</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Croix à 3 brancges vers le haut</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: right;">3</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Croix à 3 brancges vers la gauche</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: right;">4</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Croix à 3 brancges vers la droite</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: right;">s</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Carré</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: right;">p</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Pentagone</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: right;">*</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Etoile</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: right;">h ou H</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Hexagone</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: right;">+</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Plus</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: right;">P</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Plus plein</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: right;">x</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Coix</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: right;">X</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Croix pleine</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: right;">d</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Carreau</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: right;">D</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Carreau plus grand</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: right;">|</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Barre verticale (altgr+6)</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: right;">_</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Barre horizontale</p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br>
+                            <table class="cours3-table" summary="Le module 'matplotlib'" cellpadding="0" cellspacing="0">
+                                <tbody class="cours3-tbody">
+                                    <tr>
+                                        <td class="td1"><p class="titre">CHAINE</p></td>
+                                        <td class="td2"><p class="titre">COULEUR ANGLAIS / FRANCAIS</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: right;">b</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Blue / Bleu</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: right;">g</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Green / Vert</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: right;">r</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Red / Rouge</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: right;">c</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Cyan / Cyan</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: right;">m</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Magenta / Magenta</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: right;">y</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Yellow / Jaune</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: right;">k</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Black / Noir</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: right;">w</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">White / Blanc</p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br>
+                            <table class="cours3-table" summary="Le module 'matplotlib'" cellpadding="0" cellspacing="0">
+                                <tbody class="cours3-tbody">
+                                    <tr>
+                                        <td class="td1"><p class="titre">CHAINE</p></td>
+                                        <td class="td2"><p class="titre">STYLE DE LIGNE</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: right;">-</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Ligne continue</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: right;">--</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Tirets</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: right;">:</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Ligne en pointillé</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: right;">-.</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Tirets points</p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        <br>
+                        <p class="lecon-sous-titre" style="text-align: left;">plt.plot(x, y, 'r+:') -> Trace un graphe dont les points sont rouges, en forme de + et reliés par des lignes en pointillé.</p>
+                        <br>
+                        <h6 class="cours0-h6">Types de graphes</h6>
+                            <table class="cours3-table" summary="Le module 'matplotlib'" cellpadding="0" cellspacing="0">
+                                <tbody class="cours3-tbody">
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">plt.plot()</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Pour tracer des courbes</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">plt.scatter()</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Pour tracer des points</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">plt.bar()</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Pour des diagrammes à barre</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">plt.bie()</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Pour des camemberts</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1"><p class="p1" style="text-align: left;">plt.hist()</p></td>
+                                        <td class="td2"><p class="p2" style="line-height: normal;">Pour les histogrammes</p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </section>
+
+                </div>
+                
+            <!-- CREATION DE LA 10 PARTIE DU COURS PYTHON : LES CLASSES -->
+                <div class="page" id="dix">
+                    <section class="home home-cours partie-cours" id="home">
+                        <div class="content">
+                            <span data-aos="fade-up" data-aos-delay="150">ALGORITHMIE</span>
+                            <h3 data-aos="fade-up" data-aos-delay="300">LES CLASSES</h3>
+                            <p data-aos="fade-up" data-aos-delay="450"><a href="#">RETOUR AUX DIFFERENTES LECONS</a></p>
+                        </div>
+                    </section>
+
+                    <section class="lecons" id="lecons">
+                        <div class="heading">
+                            <span>Les classes en Python !</span>
+                            <h1>Qu'est-ce que les classes en Python ?</h1>
+                        </div>
+
+                        <h4 class="cours0-h4">Défintion d'une classe</h4>    
+                        
+                        <table class="cours3-table" summary="Définition d'une classe 1/4" cellpadding="0" cellspacing="0">
+                            <tbody class="cours3-tbody">
+                                <tr>
+                                    <td class="td1" style="border-right: 0.3px solid var(--ecriture);">
+                                        <p class="p1 classe" style="text-align: left; padding-bottom: 15px; font-weight: bold;">Exemple d'utilisation&nbsp;:</p>
+
+                                        <p class="p1 classe" style="text-align: left; padding-bottom: 5px; font-weight: bold;">#classe de niveau 1</p>
+                                        <p class="p1 classe" style="text-align: left;">classe A(object) :</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 20px;">x = 1</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 20px;">def f() : return A.x+1</p>
+
+                                        <p class="p1 classe" style="text-align: left; padding-top: 15px; padding-bottom: 5px; font-weight: bold;">#class de niveau 2</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">class B(A) :</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 20px;">y = 2</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 20px;">def g() : return B.x+B.y</p>
+
+                                        <p class="p1 classe" style="text-align: left; padding-top: 15px; padding-bottom: 5px; font-weight: bold;">#notion pointée</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">A.x, A.f()   # --> 1, 2</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">B.x, B.f()   # --> 1, 2</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">B.y, B.g()   # --> 2, 3</p>
+                                    </td>
+                                    <td class="td2">
+                                        <p class="p1" style="line-height: normal; padding-bottom: 20px; text-align: left;">Ckasse : class</p>
+
+                                        <p class="p2 info" style="line-height: normal; padding-bottom: 15px;">⚡ Chaque classe définit un espace de noms qui va regrouper attributs (= constantes & variables) et méthodes (=fonctions).</p>
+                                        <p class="p2 info" style="line-height: normal; padding-bottom: 15px;">⚡ L'ensemble des attributs associé à une classe est appelé états (state).</p>
+                                        <p class="p2 info" style="line-height: normal;">⚡ L'ensemble des méthodes associés à une classe est appelé comportement (behavior).</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <hr class="separation">            
+                        
+                        <h4 class="cours0-h4">Défintion d'une classe</h4>    
+                        
+                        <table class="cours3-table" summary="Définition d'une classe 2/4" cellpadding="0" cellspacing="0">
+                            <tbody class="cours3-tbody">
+                                <tr>
+                                    <td class="td1" style="border-right: 0.3px solid var(--ecriture);">
+                                        <p class="p1" style="line-height: normal; padding-bottom: 20px; text-align: left;">Ckasse : class</p>
+
+                                        <p class="p2 info" style="line-height: normal; padding-bottom: 15px;">⚡ La définition de la classe permet d'associer un identificateur avec un nouveau type de données.</p>
+                                        <p class="p2 info" style="line-height: normal;">⚡ Synthaxe à utiliser :</p>
+                                            <p class="p2 info" style="line-height: normal; font-family: 'Courier New', Courier, monospace; font-size: 2vw; padding-left: 10px;">class child(parent...) :</p>
+                                            <p class="p2 info" style="line-height: normal; font-family: 'Courier New', Courier, monospace; font-size: 2vw; padding-left: 20px;">block</p>
+                                        <p class="p2 info" style="line-height: normal; padding-top: 15px;">⚡ L'ensemble des méthodes associés à une classe est appelé comportement (behavior).</p>
+                                    </td>
+                                    <td class="td2">
+                                        <p class="p1 classe" style="text-align: left; padding-bottom: 15px; font-weight: bold;">Exemple d'utilisation&nbsp;:</p>
+
+                                        <p class="p1 classe" style="text-align: left; padding-bottom: 5px; font-weight: bold;">#classe de niveau 1</p>
+                                        <p class="p1 classe" style="text-align: left;">classe A(object) :</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 20px;">x = 1</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 20px;">def f() : return A.x+1</p>
+
+                                        <p class="p1 classe" style="text-align: left; padding-top: 15px; padding-bottom: 5px; font-weight: bold;">#class de niveau 2</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">class B(A) :</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 20px;">y = 2</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 20px;">def g() : return B.x+B.y</p>
+
+                                        <p class="p1 classe" style="text-align: left; padding-top: 15px; padding-bottom: 5px; font-weight: bold;">#notion pointée</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">A.x, A.f()   # --> 1, 2</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">B.x, B.f()   # --> 1, 2</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">B.y, B.g()   # --> 2, 3</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <hr class="separation">      
+
+                        <h4 class="cours0-h4">Défintion d'une classe</h4>    
+                        
+                        <table class="cours3-table" summary="Définition d'une classe 3/4" cellpadding="0" cellspacing="0">
+                            <tbody class="cours3-tbody">
+                                <tr>
+                                    <td class="td1" style="border-right: 0.3px solid var(--ecriture);">
+                                        <p class="p1 classe" style="text-align: left; padding-bottom: 15px; font-weight: bold;">Méthodes spéciales&nbsp;:</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px; padding-bottom: 5px;">__init__ <small>: initialisation</small></p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px; padding-bottom: 5px;">__repr__ <small>: représentation</small></p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px; padding-bottom: 5px;">__str__ <small>: conversion en str</small></p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px; padding-bottom: 5px;">__len__ <small>: taille</small></p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px; padding-bottom: 5px;">__contains__ <small>: inclusion</small></p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px; padding-bottom: 5px;">__eq__ <small>: test == (égal)</small></p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px; padding-bottom: 5px;">__le__ <small>test <= (inférieur ou égal)</small></p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px; padding-bottom: 5px;">__lt__ <small>: test < (moins de)</small></p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px; padding-bottom: 5px;">__add__ <small>: opérateur +</small></p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px; padding-bottom: 5px;">__sub__ <small>: opérateur -</small></p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px; padding-bottom: 5px;">__call <small>: opérateur ()</small></p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px; padding-bottom: 5px;">__getitem__ <small>: opérateur []</small></p>
+                                        <p class="p1 classe" style="text-align: left; padding-bottom: 5px; font-weight: bold;">... et pleins d'autres !</p>
+                                    </td>
+                                    <td class="td2">
+                                        <p class="p1" style="line-height: normal; padding-bottom: 20px; text-align: left;">Ckasse : class</p>
+
+                                        <p class="p2 info" style="line-height: normal; padding-bottom: 15px;">⚡ Il existe de nombreux comportements standars pour une classe, qui sont activés simplement en définissant des méthodes dites spéciales avec un prototype prédéfini.</p>
+                                        <p class="p2 info" style="line-height: normal;">⚡ Ces méthodes spéciales se différencient par leur identificateur spécifique&nbsp;: </p>
+                                            <p class="p2 info" style="line-height: normal; font-family: 'Courier New', Courier, monospace; font-size: 2vw; padding-left: 10px;">__name__</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <hr class="separation"> 
+                        
+                        <h4 class="cours0-h4">Défintion d'une classe</h4>    
+                        
+                        <table class="cours3-table" summary="Définition d'une classe 4/4" cellpadding="0" cellspacing="0">
+                            <tbody class="cours3-tbody">
+                                <tr>
+                                    <td class="td1" style="border-right: 0.3px solid var(--ecriture);">
+                                        <p class="p1" style="line-height: normal; padding-bottom: 20px; text-align: left;">Ckasse : class</p>
+
+                                        <p class="p2 info" style="line-height: normal; padding-bottom: 15px;">⚡ Les méthodes spéciales représentent la base du fonctionnement de Pyton.</p>
+                                        <p class="p2 info" style="line-height: normal; padding-bottom: 15px;">⚡ La quasi totalité des instructions mettent en oeuvre un mécanisme de traduction automatique de code par l'interpréteur.</p>
+                                        <p class="p2 info" style="line-height: normal;">⚡ Ce fonctionnement sera mise en oeuvre pour toutes les classes créées par les développeurs.</p>
+                                    </td>
+                                    <td class="td2">
+                                        <p class="p1 classe" style="text-align: left; padding-bottom: 5px; font-weight: bold;">Code utilisateur :</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">A = 1</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">B = A+1</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px; padding-bottom: 15px;">C = str(A/B)</p>
+
+                                        <p class="p1 classe" style="text-align: left; padding-bottom: 5px; font-weight: bold;">Code interpréteur :</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">int.__init__(A, 1)</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">int.__init__(B, </p>
+                                            <p class="p1 classe" style="text-align: left; padding-left: 20px;">int.__add__(A, 1))</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">str.__init__(C,</p>
+                                            <p class="p1 classe" style="text-align: left; padding-left: 20px;">float.__str__(</p>
+                                            <p class="p1 classe" style="text-align: left; padding-left: 20px;">int.__div__(A, B)))</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <hr class="separation"> 
+
+                        <h4 class="cours0-h4">Défintion d'une instance</h4>    
+                        
+                        <table class="cours3-table" summary="Définition d'une instance 1/3" cellpadding="0" cellspacing="0">
+                            <tbody class="cours3-tbody">
+                                <tr>
+                                    <td class="td1" style="border-right: 0.3px solid var(--ecriture);">
+                                        <p class="p1 classe" style="text-align: left; padding-bottom: 15px; font-weight: bold;">Exemple d'utilisation&nbsp;:</p>
+
+                                        <p class="p1 classe" style="text-align: left;">class A(object) :</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">x = 1</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">def __init__(self, y):</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 20px; padding-bottom: 15px;">self.y = y</p>
+
+                                        <p class="p1 classe" style="text-align: left; padding-bottom: 5px; font-weight: bold;"># instanciation</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">a = A(0) ; b = A(1)</p>
+
+                                        <p class="p1 classe" style="text-align: left; padding-bottom: 5px; padding-top: 15px; font-weight: bold;"># lecture des attributs</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">a.x, a.y   <small># --> 1, 0</small></p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">b.x, b.y   <small># --> 1, 1</small></p>
+                                        
+                                        <p class="p1 classe" style="text-align: left; padding-bottom: 5px; padding-top: 15px; font-weight: bold;"># édition d'un attribut</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">a.y = 2    <small># d'instance</small></p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">a.y, b.y   <small># --> 2, 1</small></p>
+
+                                        <p class="p1 classe" style="text-align: left; padding-bottom: 5px; padding-top: 15px; font-weight: bold;"># édition d'un attribut</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">A.x = 3    <small># de classe</small></p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">a.x, b.x   <small># --> 3, 3</small></p>
+                                    </td>
+                                    <td class="td2">
+                                        <p class="p1" style="line-height: normal; padding-bottom: 20px; text-align: left;">name = class(...)</p>
+                                        <p class="p2 info" style="line-height: normal; padding-bottom: 15px;">⚡ Un attribut défini au niveaude la classe, est commun à toutes les instances, et est appelé attribut de classe (son nom est alors préfixé par le nom de la classe).</p>
+                                        <p class="p2 info" style="line-height: normal;">⚡ Un attribut défini au niveau d'une instance, est appelé attribut d'instance et n'est pas partagé par les autres instances de la classe (son nom est alorés préfixé par le nom de l'instance).</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <hr class="separation"> 
+
+                        <h4 class="cours0-h4">Défintion d'une instance</h4>    
+                        
+                        <table class="cours3-table" summary="Définition d'une instance 2/3" cellpadding="0" cellspacing="0">
+                            <tbody class="cours3-tbody">
+                                <tr>
+                                    <td class="td1" style="border-right: 0.3px solid var(--ecriture);">
+                                        <p class="p1" style="line-height: normal; padding-bottom: 20px; text-align: left;">name = class(...)</p>
+
+                                        <p class="p2 info" style="line-height: normal; padding-bottom: 15px;">⚡ La définition d'une instance (instanciation) permet d'associer un identificateur avec une nouvelle valeur.</p>
+                                        <p class="p2 info" style="line-height: normal; padding-bottom: 15px;">⚡ Comme pour les classes, les instances vont définir un espace de noms qui pourra soit contenir des attr ou des méthodes.</p>
+                                        <p class="p2 info" style="line-height: normal;">⚡ L'accès à cet espace de noms se fera en utilisant la notation pointée.</p>
+                                    </td>
+                                    <td class="td2">
+                                        <p class="p1 classe" style="text-align: left; padding-bottom: 15px; font-weight: bold;">Exemple d'utilisation&nbsp;:</p>
+
+                                        <p class="p1 classe" style="text-align: left;">class A(object) :</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">x = 1</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">def __init__(self, y):</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 20px; padding-bottom: 15px;">self.y = y</p>
+
+                                        <p class="p1 classe" style="text-align: left; padding-bottom: 5px; font-weight: bold;"># instanciation</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">a = A(0) ; b = A(1)</p>
+
+                                        <p class="p1 classe" style="text-align: left; padding-bottom: 5px; padding-top: 15px; font-weight: bold;"># lecture des attributs</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">a.x, a.y   <small># --> 1, 0</small></p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">b.x, b.y   <small># --> 1, 1</small></p>
+                                        
+                                        <p class="p1 classe" style="text-align: left; padding-bottom: 5px; padding-top: 15px; font-weight: bold;"># édition d'un attribut</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">a.y = 2    <small># d'instance</small></p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">a.y, b.y   <small># --> 2, 1</small></p>
+
+                                        <p class="p1 classe" style="text-align: left; padding-bottom: 5px; padding-top: 15px; font-weight: bold;"># édition d'un attribut</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">A.x = 3    <small># de classe</small></p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">a.x, b.x   <small># --> 3, 3</small></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <hr class="separation"> 
+
+                        <h4 class="cours0-h4">Défintion d'une instance</h4>    
+                        
+                        <table class="cours3-table" summary="Définition d'une instance 2/3" cellpadding="0" cellspacing="0">
+                            <tbody class="cours3-tbody">
+                                <tr>
+                                    <td class="td1" style="border-right: 0.3px solid var(--ecriture);">
+                                        <p class="p1 classe" style="text-align: left; padding-bottom: 15px; font-weight: bold;">Exemple d'utilisation&nbsp;:</p>
+
+                                        <p class="p1 classe" style="text-align: left;">class A(object) :</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">x = 1</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">def __init__(self, y):</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 20px;">self.y = y</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">def f() : return -A.x</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">def g(self, x):</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 20px; padding-bottom: 15px;">return self.y + x</p>
+
+                                        <p class="p1 classe" style="text-align: left; padding-bottom: 5px; font-weight: bold;"># instanciation et accès</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px; padding-bottom: 5px;">a = A(2)</p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px; padding-bottom: 5px;">a.x, a.y <small># --> 1, 2</small></p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px; padding-bottom: 5px;">A.f() <small># --> -1</small></p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px; padding-bottom: 5px;">a.f() <small># --> Error</small></p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px; padding-bottom: 5px;">a.g(1) <small># --> 3</small></p>
+                                        <p class="p1 classe" style="text-align: left; padding-left: 10px;">A.g(1) <small># --> Error</small></p>
+                                    </td>
+                                    <td class="td2">
+                                        <p class="p1" style="line-height: normal; padding-bottom: 20px; text-align: left;">name = class(...)</p>
+                                        
+                                        <p class="p2 info" style="line-height: normal; padding-bottom: 15px;">⚡ Toutes les méthodes sont communes à toutes les instances d'une classe.</p>
+                                        <p class="p2 info" style="line-height: normal; padding-bottom: 15px;">⚡ Ce qui différencie une méthode de classe d'une méthode d'instance, est le fait que ces dernières ont systématiquement un 1er paramètre appelé self.</p>
+                                        <p class="p2 info" style="line-height: normal;">⚡ Dans le bloc d'instructions d'une classe, self correspond à une référence sur l'instance en cours.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </section>
+
+                </div>
+                   
+            <!-- CREATION DE LA 11 PARTIE DU COURS PYTHON : LA RÉCURSIVITÉ -->
+                <div class="page" id="onze">
+                    <section class="home home-cours partie-cours" id="home">
+                        <div class="content">
+                            <span data-aos="fade-up" data-aos-delay="150">ALGORITHMIE</span>
+                            <h3 data-aos="fade-up" data-aos-delay="300">LA RÉCURSIVITÉ</h3>
+                            <p data-aos="fade-up" data-aos-delay="450"><a href="#">RETOUR AUX DIFFERENTES LECONS</a></p>
+                        </div>
+                    </section>
+
+                    <section class="lecons" id="lecons">
+                        <div class="heading">
+                            <span>La récursivité en Python&nbsp;!</span>
+                            <h1>Qu'est-ce que la récursivité en Python&nbsp;?</h1>
+                        </div>
+
+                        <p class="lecon-sous-titre">La fonction récurisive est une fonction qui s'appelle elle-même jusqu'à ce qu'elle ne le fasse plus.</p>
+
+                        <p class="cours0-p">La fonction <span style="color: #57D6E4;">recurs</span><span>()</span> suivante est une fonction récursive car elle a un appel à elle-même&nbsp;:</p>
+
+                        <p class="code-p" style="padding-left: 15px; padding-bottom: 2px;"><span style="color: #c670e0;">def</span> <span style="color: #57D6E4;">recurs</span>()&nbsp;:</p>
+                            <p class="code-p" style="padding-left: 30px; padding-bottom: 2px;"><span style="color: #999999;"># ...</span></p>
+                            <p class="code-p" style="padding-left: 30px; padding-bottom: 2px;"><span style="color: #57D6E4;">recurs</span>()</p>
+                            <p class="code-p" style="padding-left: 30px;"><span style="color: #999999;"># ...</span></p>
+
+                        <p class="cours0-p">Pour pouvoir s'arrêter, une fonction récursive doit avoir une condition d'arrêt. Nous devons donc ajouter une instruction <span style="color: #c670e0;">if</span> comme celle-ci&nbsp;:</p>
+
+                        <p class="code-p" style="padding-left: 15px; padding-bottom: 2px;"><span style="color: #c670e0;">def</span> <span style="color: #57D6E4;">recurs</span>()&nbsp;:</p>
+                            <p class="code-p" style="padding-left: 30px; padding-bottom: 2px;"><span style="color: #999999;"># ...</span></p>
+                            <p class="code-p" style="padding-left: 30px; padding-bottom: 2px;"><span style="color: #c670e0;">if</span> condition&nbsp;:</p>
+                                <p class="code-p" style="padding-left: 45px; padding-bottom: 2px;"><span style="color: #999999;"># ne s'appelle pas elle-même</span></p>
+                            <p class="code-p" style="padding-left: 30px; padding-bottom: 2px;"><span style="color: #c670e0;">else</span>&nbsp;:</p>
+                                <p class="code-p" style="padding-left: 45px; padding-bottom: 2px;"><span style="color: #57D6E4;">recurs</span>()</p>
+                            <p class="code-p" style="padding-left: 30px;"><span style="color: #999999;"># ...</span></p>
+
+                        <p class="cours0-p">En règle générale, on utilise une fonction récurisve pour diviser un problème difficiel à résoudre en problèmes plus petis qui sont plus facile à résoudre.</p>
+
+                        <p class="cours0-p">En programmation, vous trouverez souvent les fonctions récursives utilisées dans les structres de données et les algorithmies comme les arbres, les graphiques et les recherches binaires.</p>
+
+
+                    </section>
+
+                </div>
+
+            <!-- CREATION DE LA 12 PARTIE DU COURS PYTHON : AUTRES -->
+                <div class="page" id="douze">
+                    <section class="home home-cours partie-cours" id="home">
+                        <div class="content">
+                            <span data-aos="fade-up" data-aos-delay="150">ALGORITHMIE</span>
+                            <h3 data-aos="fade-up" data-aos-delay="300">AUTRES</h3>
+                            <p data-aos="fade-up" data-aos-delay="450"><a href="#">RETOUR AUX DIFFERENTES LECONS</a></p>
+                        </div>
+                    </section>
+
+                    <section class="lecons" id="lecons">
+                        <div class="heading">
+                            <span>Autres&nbsp;!</span>
+                            <h1>Que dire d'autres sur Python&nbsp;?</h1>
+                        </div>
+
+                        <p class="lecon-sous-titre">Ben, c'est bien, c'est un langage de Programmation !</p>
+                        <p class="lecon-sous-titre">Attention au Canard !</p>
+
+                </div>
+                            
+        </section>
+
+        <!-- CREATION DU FOOTER -->
+        <footer>
+            <ul class="social_icon">
+                <!--<li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>-->
+                <li><a href="https://www.linkedin.com/in/clement-vitrat-gutierrez-575444223/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <!--<li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>-->
+                <li><a href="https://github.com/clement-vitrat" target="_blank"><i class="fab fa-github"></i></a></li>
+            </ul>
+            <p>Les Meilleurs Révisions by Clément V. © 2022</p>
+        </footer>
+
+        <!-- CREATION DU DARK MODE -->
+        <div class="changeTheme" id="changeTheme"></div>
+
+
+        <!-- CREATION DU RETOUR HAUT DE PAGE-->
+        <div class="retour_haut">
+            <button onclick="topFunction()" id="myBtn"><i class="fas fa-chevron-circle-up"></i></button>
+        </div>
+
+        <script src="../js/script.js"></script>
+
+    </body>
+
+</html>
